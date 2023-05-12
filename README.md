@@ -6,8 +6,7 @@ Esta pasta é destinada para armazenar layouts HTML para simulação e testes.<b
 
 ## Indice de Layouts
 
-- Fazer requisições e consumir dados vindos de uma `API`;
-
+- 12/05/2023 - Dias das Mães ;
 
 ## ©️ Direitos Autorais
 Os arquivos contidos nesta pastar são de propriedade particular e não é não é permitida a publicação de cópias totais ou parciais do mesmo.
