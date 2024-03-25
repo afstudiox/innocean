@@ -1,0 +1,152 @@
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+
+<!-- o que eu quero é o seguinte . Tenho um modelo de email ( HTML )que envio para toda minha base de clientes. Porém quero que ao identificar que o email  seja aberto no app mobile do Gmail, renderize outro  HTML específico. Consigo fazer isso utilizando o SalesForce para disparo ?
+Entendi! Você deseja personalizar o conteúdo do e-mail com base no dispositivo em que ele é aberto, especificamente no **app móvel do Gmail**. Embora o **Salesforce** não ofereça uma solução direta para detectar o aplicativo específico em que o e-mail é visualizado, você pode seguir uma abordagem alternativa:
+1. **Segmentação por Domínio de E-mail**:
+   - Em vez de detectar o aplicativo móvel diretamente, você pode segmentar com base no domínio do endereço de e-mail.
+   - Por exemplo, se o domínio for "@gmail.com", você pode inferir que o destinatário está usando o Gmail.
+   - Crie regras de fluxo de trabalho ou processos de automação no Salesforce para aplicar diferentes modelos de e-mail com base no domínio.
+2. **Criação de Modelos de E-mail Personalizados**:
+   - No Salesforce, você pode criar **modelos de e-mail personalizados em HTML**.
+   - Use a funcionalidade de **HTML personalizado** para criar modelos sem usar o Classic Letterhead¹.
+   - Se você conhece HTML, pode colar o código diretamente no modelo.
+   - Caso contrário, use o assistente do Salesforce para criar modelos HTML com controles de formatação fáceis de usar².
+3. **Detecção no Cliente (JavaScript)**:
+   - No conteúdo do e-mail, insira um pequeno trecho de **JavaScript** que detecta o agente do usuário (navegador ou aplicativo).
+   - Por exemplo, você pode usar o seguinte código para detectar se o e-mail está sendo visualizado em um dispositivo móvel:
+     ```html
+     <script>
+       if (/Mobi|Android/i.test(navigator.userAgent)) {
+         Renderize o HTML específico para dispositivos móveis aqui
+       } else {
+         Renderize o HTML padrão aqui
+       }
+     </script>
+     ```
+4. **Testes A/B**:
+   - Execute testes A/B com diferentes versões do seu e-mail (uma para desktop e outra para dispositivos móveis).
+   - Avalie a eficácia e a taxa de abertura em cada grupo.
+Lembre-se de que a detecção de aplicativos específicos pode ser complexa e nem sempre precisa. A abordagem baseada em domínio é mais confiável. Experimente essas sugestões e adapte-as às suas necessidades específicas! :feliz: -->
+
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+      }
+
+      /* padronização de classes de cores Hyundai */
+      .bg-hyundai-blue {
+        background-color: #002c5f;
+        color: #ffffff;
+      }
+      .bg-progressive-blue {
+        background-color: #007fab;
+        color: #ffffff;
+      }
+      .bg-hyundai-sand {
+        background-color: #e4dcd3;
+        color: #000000;
+      }
+      .bg-hyundai-sand-light {
+        background-color: #f6f3f2;
+        color: #000000;
+      }
+      .bg-white {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .bg-black {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .bg-light-grey {
+        background-color: #cccccc;
+        color: #000000;
+      }
+      .bg-dark-grey {
+        background-color: #676767;
+        color: #ffffff;
+      }
+      .bg-active-red {
+        background-color: #e63312;
+        color: #ffffff;
+      }
+      .bg-header-bg {
+        background-image: url("./img/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .desktop-content {
+          display: table;
+        }
+        .mobile-content {
+          display: none;
+        }
+        
+
+      @media only screen and (max-width: 500px) {
+        /* Estilos específicos para dispositivos móveis aqui */
+        .desktop-content[yahoo] {
+          display: none;
+        }
+        .mobile-content[yahoo] {
+          display: table;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body class="bg-white">
+    <table
+      class="bg-white"
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+    <tbody>
+      <!-- Tabela padrão -->
+      <tr class="desktop-content">
+        <td>
+          <table cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="600" height="50" style="text-align: center;">HTML Desktop</td>
+            </tr>
+            <tr>
+              <td width="600" height="410" class="bg-header-bg"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Tabela para dispositivos móveis -->
+      <tr class="mobile-content">
+        <td>
+          <table cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="600" height="50" style="text-align: center;">HTML Mobile</td>
+            </tr>
+            <tr>
+              <td width="600" height="410">
+                <img src="./img/banner.png" alt="imagem normal" style="display: block;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </body>
+</html>

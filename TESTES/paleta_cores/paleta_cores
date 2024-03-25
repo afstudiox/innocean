@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Paleta de Cores</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      /* padronização de classes de cores Hyundai */
+      .bg-hyundai-blue {
+        background-color: #002c5f;
+        color: #ffffff;
+      }
+      .bg-progressive-blue {
+        background-color: #007fab;
+        color: #ffffff;
+      }
+      .bg-hyundai-sand {
+        background-color: #e4dcd3;
+        color: #000000;
+      }
+      .bg-hyundai-sand-light {
+        background-color: #f6f3f2;
+        color: #000000;
+      }
+      .bg-white {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .bg-black {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .bg-light-grey {
+        background-color: #cccccc;
+        color: #000000;
+      }
+      .bg-dark-grey {
+        background-color: #676767;
+        color: #ffffff;
+      }
+      .bg-active-red {
+        background-color: #e63312;
+        color: #ffffff;
+      }
+      .bg-teste {
+        background-image: url("./img/creta-action.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">SAND</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">SAND LIGTH</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">GREY</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">RED</td>
+            <td width="120" height="25" style="text-align: center; border: 1px solid black; font-size: 12px;">BLACK</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#002c5f;">BLUE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#002c5f;">BLUE</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#007fab;">PROGRESSIVE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#007fab;">PROGRESSIVE</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#e4dcd3;">SAND</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#e4dcd3;">SAND</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#f6f3f2;">SAND LIGHT</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#f6f3f2;">SAND LIGHT</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#ffffff;">WHITE</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#ffffff;">WHITE</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#ffffff;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#cccccc;">GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#cccccc;">GREY</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#676767;">DARK GREY</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#676767;">DARK GREY</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#e63312;">RED</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#e63312;">RED</td>
+          </tr>
+          <tr>
+            <td width="120" height="25" style="text-align: center; background-color: #002c5f; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #007fab; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e4dcd3; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #f6f3f2; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #ffffff; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #cccccc; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #676767; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #e63312; color:#000000;">BLACK</td>
+            <td width="120" height="25" style="text-align: center; background-color: #000000; color:#000000;">BLACK</td>
+          </tr>
+        </table>
+      </tbody>
+    </table>
+  </body>
+</html>

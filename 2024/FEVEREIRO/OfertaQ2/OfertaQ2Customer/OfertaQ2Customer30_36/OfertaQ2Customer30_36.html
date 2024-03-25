@@ -1,0 +1,440 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @hb20 = Concat('www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=7')
+
+set @hb20s = Concat('www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=8')
+
+set @creta = Concat('www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=9')
+
+]%%
+
+
+<custom name="opencounter" type="tracking"/>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+    <style>
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+      }
+
+      /* padronização de classes de cores Hyundai */
+      .bg-hyundai-blue {
+        background-color: #002c5f;
+        color: #ffffff;
+      }
+      .bg-progressive-blue {
+        background-color: #007fab;
+        color: #ffffff;
+      }
+      .bg-hyundai-sand {
+        background-color: #e4dcd3;
+        color: #000000;
+      }
+      .bg-hyundai-sand-light {
+        background-color: #f6f3f2;
+        color: #000000;
+      }
+      .bg-white {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .bg-black {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .bg-light-grey {
+        background-color: #cccccc;
+        color: #000000;
+      }
+      .bg-dark-grey {
+        background-color: #676767;
+        color: #ffffff;
+      }
+      .bg-active-red {
+        background-color: #e63312;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody class="bg-pattern">
+        <!-- HEADER -->
+        <tr class="bg-hyundai-blue">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="28" height="73"></td>
+                <td width="146" height="73">
+                  <a href="https://www.hyundai.com.br/">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ2Customer/logo-hyundai.png"
+                      width="146"
+                      alt="Hyundai"
+                  /></a>
+                </td>
+                <td width="426" height="73"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BANNER -->
+        <tr class="bg-white">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="360">
+                  <a href="https://www.hyundai.com.br/ofertas.html">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ2Customer/header-bg.png"
+                      width="600"
+                      alt="Confira todas as ofertas"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+
+        <!-- MAIN TEXT -->
+        <tr class="bg-white">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="90" height="181"></td>
+                <td
+                  class="bg-white" 
+                  width="510" 
+                  height="181" 
+                  style="
+                    font-size: 14px; 
+                    line-height: 1.2;
+                    text-align: left;">
+                    Olá, %%firstname_%% <br><br>
+                    O ano já começou, mas ainda dá tempo de passar 2024 de carro novo! Seja para retomar a rotina de trabalho, viajar com a família ou sair comos amigos, aproveite condições imperdíveis para sair de novo Hyundai 0 km nesse pós-carnaval:
+                </td>
+                <td width="80" height="181"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- OFERTA 1 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr valign="top">
+                <td width="73" height="303"></td>
+                  <td width="454" height="303">
+                    <a href="%%=RedirectTo(@hb20)=%%">
+                      <img width="454" height="303" style="display: block;" src="./OfertaQ2Customer/Oferta1.png" alt="HB20 Comfort Plus 1.0 MT - De R$ 86.490 por R$ 82.490 à vista ou taxa de 0% a.m. e saldo em 18 meses. TENHO INTERESSE!">
+                    </a>
+                  </td>
+                <td width="73" height="303"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="32"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- OFERTA 2 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr valign="top">
+                <td width="73" height="303"></td>
+                <td width="454" height="303" class="bg-oferta2">
+                  <a href="%%=RedirectTo(@hb20S)=%%">
+                    <img width="454" height="303" style="display: block;" src="./OfertaQ2Customer/Oferta2.png" alt="HB20S Comfort Plus 1.0 TGDI AT - De R$ 111.890 por R$ 107.890 à vista ou taxa a partir de 0% a.m. TENHO INTERESSE!">
+                  </a>
+                </td>
+                <td width="73" height="303"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="32"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- OFERTA 3 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr valign="top">
+                <td width="73" height="303"></td>
+                <td width="454" height="303" class="bg-oferta3">
+                  <a href="%%=RedirectTo(@creta)=%%">
+                    <img width="454" height="303" style="display: block;" src="./OfertaQ2Customer/Oferta3.png" alt="CRETA Limited Safety - Bônus de até R$ 9.000 no usado - De R$ 147.890 por R$ 138.890 ou taxa a partir de 0% a.m. com saldo em 18 meses. TENHO INTERESSE!">
+                  </a>
+                </td>
+                <td width="73" height="303"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="32"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FINAL TEXT -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="53" valign="top" style="font-size: 17px; text-align: center; line-height: 1.1;">
+                  <strong>Não perca tempo para garantir o seu, <br>
+                    as ofertas são por tempo limitado!</strong>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVISOR -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="48" height="1"></td>
+                <td width="504" height="1" class="bg-dark-grey"></td>
+                <td width="48" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- REDES SOCIAIS -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="48" height="60">&nbsp;</td>
+
+                <td width="180">
+                  <img
+                    style="display: block"
+                    src="./OfertaQ2Customer/footer-ibama.png"
+                    width="180"
+                    alt="Paz no trânsito, começa por você."
+                  />
+                </td>
+
+                <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+                <td width="59" height="60">&nbsp;</td>
+
+                <td
+                  width="60"
+                  height="40"
+                  style="
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #000000;
+                    font-weight: bold;
+                  "
+                >
+                  Siga-nos:
+                </td>
+
+                <td>
+                  <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-blog.png"
+                      width="26"
+                      height="26"
+                      alt="Blog"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.facebook.com/hyundaibr/">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-facebook.png"
+                      width="26"
+                      height="26"
+                      alt="Facebook"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.youtube.com/user/hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-youtube.png"
+                      width="26"
+                      height="26"
+                      alt="Youtube"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.instagram.com/hyundaibr/"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-instagram.png"
+                      width="26"
+                      height="26"
+                      alt="Instagram"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-linkedin.png"
+                      width="26"
+                      height="26"
+                      alt="LinkedIn"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.tiktok.com/@hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ2Customer/footer-tiktok.png"
+                      width="26"
+                      height="26"
+                      alt="Tiktok"
+                  /></a>
+                </td>
+
+                <td width="48" height="60">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXTO LEGAL -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="48"></td>
+                <td
+                  width="504"
+                  valign="top"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: justify;
+                  "
+                >
+                <br />
+                  Valores sujeitos a alteração e não aplicáveis à Zona Franca de Manaus. Consulte concessionárias participantes. HB20 Comfort PLus 1.0L com transmissão mecânica  - ano de fabricação/modelo 2023/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 82.490,00 com pintura preto ônix e frete incluso. Entrada de R$ 48.250,14 (58,49%), saldo em 48 parcelas mensais no valor de R$ 699,00, e uma parcela final no valor de R$ 29.497,80. Preço total do veículo com os encargos é de R$ 111.299,94. Taxa de juros para o financiamento simulado é de 1,53% a.m. e 19,99% (CET: 1,84% a.m. e 24,44% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Para efetivar a recompra do veículo Hyundai HB20 ou Hyundai Creta seminovo por quantia equivalente a 80% do valor da Tabela FIPE conforme o Programa Compra Certa Hyundai, devem ser atendidos os critérios de avaliação determinados no Manual de Recompra Garantida, disponibilizado no website da montadora www.hyundai.com.br. As condições da recompra do veículo seminovo e a aquisição de um Hyundai 0 km pelo Programa Compra Certa Hyundai são estabelecidas por meio de negociação feita exclusivamente entre a concessionária HMB e o cliente sem qualquer responsabilidade da Hyundai Motor Brasil Montadora de Automóveis Ltda. e da Hyundai Financiamentos (Banco Hyundai Capital Brasil S.A.). Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/02/2024 a 29/02/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br. HB20S Comfort Plus 1.0L TGDI com transmissão automática - ano de fabricação/modelo 2023/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 111.890,00 por R$ 106.290 com pintura preto ônix e frete incluso. Ou Entrada de R$ 67.134,00 (60%), saldo em 12 parcelas mensais no valor de R$ 3.996,40. Preço total do veículo com os encargos é de R$ 115.090,83. Taxa de juros para o financiamento simulado é de 0,00% a.m. e 0,00% (CET: 1,08% a.m. e 13,75% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/02/2024 a 29/02/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br. CRETA Limited Safety 1.0L TGDI com transmissão automática 2023/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 147.890,00 com pintura preto ônix e frete incluso. Entrada de R$ 88.734,00 (60%), saldo em 18 parcelas mensais no valor de R$ 3.496,88. Preço total do veículo com os encargos é de R$ 151.677,82. Taxa de juros para o financiamento simulado é de 0,00% a.m. e 0,00% (CET: 0,66% a.m. e 8,24% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/02/2024 a 29/02/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br.
+                </td>
+                <td width="48"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BUSINESS INFORMATION & OPT OUT-->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="48">&nbsp;</td>
+                <td
+                  width="504"
+                  height="60"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: center;
+                  "
+                >
+                  <br>
+                  Se você não deseja mais receber e-mails como este,
+                  <a href="%%subscription_center_url%%">clique aqui</a>.
+                  <br><br>
+                  Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                  13413-900 - Piracicaba-SP
+                  <br><br>
+                  Esta é uma mensagem automática. Por favor, não responda este
+                  e-mail. Caso deseje,
+                  <a href="%%profile_center_url%%">fale conosco.</a>.
+                  <br><br>
+                  This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                  <br><br><br>
+                </td>
+                <td width="48">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>

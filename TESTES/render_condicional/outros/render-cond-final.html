@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mail</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+    /* reset css */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.2;
+    }
+
+    .bg-header-bg {
+      background-image: url("./img/banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .yahoo-image {
+      display: none;
+    }
+
+    @media yahoo {
+      .yahoo-image {
+          display: table !important;
+        }  
+      
+      .bg-image {
+          display: none !important;
+        }
+    }
+    
+    </style>
+
+  </head>
+
+  <body class="bg-white">
+  
+    <table
+      class="bg-white"
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      data-device-width
+    >
+    <tbody>
+      <!-- Background Image - Todos os clientes -->
+      <tr class="bg-image">
+        <td>
+          <table cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="600" height="50" style="text-align: center;">BG Image</td>
+            </tr>
+            <tr>
+              <td width="600" height="410" class="bg-header-bg"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Versão para o Yahoo Mail Mobile App -->
+      <tr class="yahoo-image">
+        <td>
+          <table cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="600" height="50" style="text-align: center;">Yahoo Image</td>
+            </tr>
+            <tr>
+              <td width="600" height="410">
+                <img src="./img/banner.png" alt="imagem normal" style="display: block;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </body>
+</html>
