@@ -1,0 +1,620 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @cretaLimited = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=216')
+
+set @cretaPlatinum = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=217')
+
+set @cretaComfort = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=218')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <!-- HEADER-->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="52"></td>
+                <td width="146" height="52">
+                  <a href="https://www.hyundai.com.br">
+                    <img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/logo-hyundai.png"
+                      width="147"
+                      alt="Hyundai"
+                    />
+                  </a>
+                </td>
+                <td width="438" height="52"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="16"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MKV-->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="424"></td>
+                <td width="568" height="424">
+                  <a href="%%=RedirectTo(@cretaLimited)=%%" style="text-decoration: none;">
+                    <img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/mkv.png"
+                      width="568"
+                      height="424"
+                      alt="Aproveite condições exclusivas por tempo limitado! CRETA Limited Safety 2024/2024 Motor Kappa 1.0 TGDI com Transmissão Automática De R$ 149.990 por R$ 139.990. Quero garantir!"
+                    />
+                  </a>
+                </td>
+                <td width="16" height="424"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MAIN TEXT -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="67" height="228">&nbsp;</td>
+                <td
+                  width="463"
+                  height="228"
+                  style="
+                    font-size: 14px;
+                    text-align: left;
+                    line-height: 1.3;
+                  "
+                >
+                  <p>Olá, %%firstname_%%!</p>
+                  <strong>Não perca essa oportunidade incrível de sair de Novo Hyundai CRETA 0 km com condições exclusivas</strong> do último Hyundai Day! Aproveite ofertas imbatíveis por tempo limitado para garantir o seu!
+                  <br><br>
+                  Você também pode gostar desses modelos:
+                </td>
+                <td width="70" height="228">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 1 - L1 -->
+        <tr>
+          <td width="600" height="139">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="332" height="139">
+                  <!-- Imagem Carro -->
+                  <img 
+                    width="332" height="139" 
+                    style="display: block;" 
+                    src="./HyundayDayRepiqueCRETA/creta-platinum.png" 
+                    alt="CRETA Platinum">
+                </td>
+                <td width="225" height="139" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0" >
+                    <tr bgcolor="#002C5F">
+                      <td width="225" height="118" 
+                        style="border-top-right-radius: 12px; line-height: 1.2;">
+                        <!-- Modelo do Carro -->
+                        <span 
+                          style="display: block; font-size: 15px; color: #FFFFFF;">
+                          <strong>CRETA Platinum Safety 24/24</strong>
+                        </span>
+                        <span 
+                          style="display: block; color: #FFFFFF; font-size: 10px;">
+                          Motor Kappa 1.0 TGDI com <br>
+                          Transmissão Automática <br>
+                          com teto solar
+                        </span>
+                      </td>
+                    </tr>
+                    <tr >
+                      <td width="225" height="21"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="43" height="139"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>       
+        <!-- CARD 1 - L2 -->
+        <tr>
+          <td width="600" height="114">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="157" height="114"></td>
+                <!-- Preçoes e Condições Coluna 1 -->
+                <td width="128" height="114" style="font-size: 12px; line-height: 1; text-decoration: none;">
+                  Bônus de
+                  <span style="display: block; font-size: 30px;"><strong>R$ 9.000</strong></span>
+                  na troca do seu usado.
+                </td>
+                <td width="1" height="114">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="1" height="56" bgcolor="#002C5F"></td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- Preçoes e Condições Coluna 2 -->
+                <td width="11" height="114"></td>
+                <td width="303" height="114" style="font-size: 12px; line-height: 1;">
+                  Entrada + 48x de
+                  <span style="display: block; font-size: 30px;"><strong>R$ 1.499</strong></span>
+                  + parcela final com <br>recompra garantida
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- CARD 1 - L 3-->
+        <tr>
+          <td width="600" height="46">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="21" height="46"></td>
+                <!-- Botão CTA -->
+                <td width="536" height="46">
+                  <a href="%%=RedirectTo(@cretaPlatinum)=%%" style="text-decoration: none;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="536" height="46" 
+                          bgcolor="#002C5F"
+                          style="
+                          color: #FFFFFF;
+                            border-bottom-left-radius: 12px; 
+                            border-bottom-right-radius: 12px;
+                            font-weight: 16px; 
+                            text-align: center;">
+                            Tenho Interesse
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+                <td width="43" height="46"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="65"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 2 - L1 -->
+        <tr>
+          <td width="600" height="139">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <!-- Imagem Carro -->
+                <td width="332" height="139">
+                  <img 
+                    width="332" height="139" 
+                    style="display: block;" 
+                    src="./HyundayDayRepiqueCRETA/creta-comfort.png" 
+                    alt="Creta Comfort">
+                </td>
+                <td width="225" height="139" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0" >
+                    <tr bgcolor="#002C5F" >
+                      <td width="225" height="118" 
+                        style="border-top-right-radius: 10px; line-height: 1.2; color: #FFFFFF;">
+                        <!-- Modelo do Carro -->
+                        <span 
+                          style="display: block; font-size: 15px; color: #FFFFFF;">
+                          <strong>CRETA Comfort Plus 24/24</strong>
+                        </span>
+                        <span 
+                          style="display: block; color: #FFFFFF; font-size: 10px;">
+                          Motor Kappa 1.0 TGDI com  <br>
+                          Transmissão Automática
+                        </span>
+                      </td>
+                    </tr>
+                    <tr >
+                      <td width="225" height="21"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="43" height="139"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>       
+        <!-- CARD 1 - L2 -->
+        <tr>
+          <td width="600" height="114">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="126" height="114"></td>
+                <!-- Preçoes e Condições Coluna 1 -->
+                <td width="160" height="114" style="font-size: 12px; line-height: 1; text-decoration: none;">
+                  Bônus de
+                  <span style="display: block; font-size: 30px;"><strong>R$ 9.000</strong></span>
+                  na valorização do seu usado
+                </td>
+                <td width="1" height="114">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="1" height="56" bgcolor="#002C5F"></td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- Preçoes e Condições Coluna 2 -->
+                <td width="11" height="114"></td>
+                <td width="303" height="114" style="font-size: 12px; line-height: 1;">
+                  e taxas a partir de <br>
+                  <span style="display: inline-block; font-size: 30px;"><strong>0%</strong></span>
+                  ao mês, <br>com saldo em 36 meses.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- CARD 2 - L 3-->
+        <tr>
+          <td width="600" height="46">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="21" height="46"></td>
+                <!-- Botão CTA -->
+                <td width="536" height="46">
+                  <a href="%%=RedirectTo(@cretaComfort)=%%" style="text-decoration: none;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="536" height="46" bgcolor="#002C5F"
+                          style="
+                          color: #FFFFFF;
+                            border-bottom-left-radius: 12px; 
+                            border-bottom-right-radius: 12px;
+                            font-weight: 16px; 
+                            text-align: center;">
+                            Tenho Interesse
+                        </td>
+                      </tr>
+                    </table>
+                  </a>
+                </td>
+                <td width="43" height="46"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="16"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FINAL TEXT -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td
+                  width="600"
+                  height="74"
+                  style="
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 17px;
+                  "
+                >
+                Não perca tempo e acelere para aproveitar!
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="20"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVISOR -->
+        <tr>
+          <td width="600" height="1">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="1"></td>
+                <td width="568" height="1" bgcolor="#676767"></td>
+                <td width="16" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- REDES SOCIAIS -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="60">&nbsp;</td>
+
+                <td width="180">
+                  <img
+                    style="display: block"
+                    src="./HyundayDayRepiqueCRETA/footer-ibama.png"
+                    width="180"
+                    alt="Paz no trânsito, começa por você."
+                  />
+                </td>
+
+                <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+                <td width="123" height="60">&nbsp;</td>
+
+                <td
+                  width="60"
+                  height="40"
+                  style="
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #000000;
+                    font-weight: bold;
+                  "
+                >
+                  Siga-nos:
+                </td>
+
+                <td>
+                  <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                    <img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-blog.png"
+                      width="26"
+                      height="26"
+                      alt="Blog"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.facebook.com/hyundaibr/">
+                    <img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-facebook.png"
+                      width="26"
+                      height="26"
+                      alt="Facebook"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.youtube.com/user/hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-youtube.png"
+                      width="26"
+                      height="26"
+                      alt="Youtube"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.instagram.com/hyundaibr/"
+                    ><img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-instagram.png"
+                      width="26"
+                      height="26"
+                      alt="Instagram"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                    ><img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-linkedin.png"
+                      width="26"
+                      height="26"
+                      alt="LinkedIn"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.tiktok.com/@hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./HyundayDayRepiqueCRETA/footer-tiktok.png"
+                      width="26"
+                      height="26"
+                      alt="Tiktok"
+                  /></a>
+                </td>
+
+                <td width="16" height="60">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ICONES -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="150" height="45"></td>
+                <td width="33" height="45" valign="middle">
+                  <img src="./HyundayDayRepiqueCRETA/garantia.png" alt="Garantia">
+                </td>
+                <td width="101" height="45"></td>
+                <td width="33" height="45" valign="middle">
+                  <img src="./HyundayDayRepiqueCRETA/assistencia.png" alt="Assistência">
+                </td>
+                <td width="102" height="45"></td>
+                <td width="33" height="45" valign="middle">
+                  <img src="./HyundayDayRepiqueCRETA/valor.png" alt="Valor">
+                </td>
+                <td width="148" height="45"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- LEGENDAS -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr style="font-size: 10px;" valign="top">
+                <td width="220" height="29" style="text-align: right;">
+                  5 anos de garantia sem <br>limite de quilometragem.
+                </td>
+                <td width="160" height="29" style="text-align: center;">
+                  Assistência 100% treinada <br>pela própria Hyundai.
+                </td>
+                <td width="220" height="29" style="text-align: left;">
+                  Excelente valor residual.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXTO LEGAL -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16"></td>
+                <td
+                  width="568"
+                  valign="top"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: justify;
+                  "
+                >
+                <br />
+                *Valores sujeitos a alteração e não aplicáveis a Zona Franca de Manaus. Consulte concessionáras participantes. CRETA Comfort Plus 1.0L TGDI com transmissão automática 2024/2024. CRETA Limited Safety 1.0L TGDI com transmissão automática 2024/2024, preço público sugerido à vista (válido para todo o Brasil): de R$ 149.990,00 por R$ 139.990,00 com pintura preto sólido e frete incluso. Condição válida no período de 01/03/2024 a 31/03/2024 enquanto durarem os estoques. Imagens meramente ilustrativas. CRETA Comfort Plus 1.0L TGDI com transmissão automática 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 135.890,00 com pintura preto ônix e frete incluso. Bônus de até R$ 9.000,00 na troca do seminovo será oferecido mediante troca dos VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca, somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo Creta Comfort Plus 1.0L TGDI com transmissão automática - ano de fabricação/modelo 2024/2024 ou em nome de parentes de 1º grau (pais, filhos, cônjuges), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Entrada de R$ 64.495,00 (50%), saldo em 36 parcelas mensais no valor de R$ 2.280,62. Preço total do veículo com os encargos é de R$ 146.597,33. Taxa de juros para o financiamento simulado é de 0,99% a.m. e 12,55% (CET: 1,37% a.m. e 17,71% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/03/2024 a 31/03/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br. CRETA Platinum Safety 1.0L TGDI com teto solar e transmissão automática 2024/2024. CRETA Platinum Safety 1.0L TGDI com teto solar e transmissão automática 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 167.690,00 com pintura preto ônix e frete incluso. Entrada de R$ 91.696,13 (54,68%), saldo em 48 parcelas mensais no valor de R$ 1.499,00, e uma parcela final no valor de R$ 63.257,80. Preço total do veículo com os encargos é de R$ 226.905,93. Taxa de juros para o financiamento simulado é de 1,53% a.m. e 19,99% (CET: 1,73% a.m. e 22,80% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para o São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Para efetivar a recompra do veículo Hyundai HB20 ou Hyundai Creta seminovo por quantia equivalente a 80% do valor da Tabela FIPE conforme o Programa Compra Certa Hyundai, devem ser atendidos os critérios de avaliação determinados no Manual de Recompra Garantida, disponibilizado no website da montadora www.hyundai.com.br. As condições da recompra do veículo seminovo e a aquisição de um Hyundai 0 km pelo Programa Compra Certa Hyundai são estabelecidas por meio de negociação feita exclusivamente entre a concessionária HMB e o cliente sem qualquer responsabilidade da Hyundai Motor Brasil Montadora de Automóveis Ltda. e da Hyundai Financiamentos (Banco Hyundai Capital Brasil S.A.). Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de01/03/2024 a 31/03/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br.
+                </td>
+                <td width="16"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BUSINESS INFORMATION & OPT OUT-->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16">&nbsp;</td>
+                <td
+                  width="568"
+                  height="60"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: center;
+                  "
+                >
+                  <br>
+                  Se você não deseja mais receber e-mails como este,
+                  <a href="%%subscription_center_url%%">clique aqui</a>.
+                  <br><br>
+                  Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                  13413-900 - Piracicaba-SP
+                  <br><br>
+                  Esta é uma mensagem automática. Por favor, não responda este
+                  e-mail. Caso deseje,
+                  <a href="%%profile_center_url%%">fale conosco.</a>.
+                  <br><br>
+                  This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                  <br><br><br>
+                </td>
+                <td width="16">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>
