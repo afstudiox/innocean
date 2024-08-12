@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        .animated-text {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text" id="text1" style="font-weight: normal;">Texto Animado</div>
+    <div class="animated-text" id="text2" style="font-weight: bold;">Texto Animado</div>
+    <script>
+        setInterval(function(){
+            var textElement = document.getElementById('text1');
+            textElement.style.fontWeight = (textElement.style.fontWeight == 'normal' ? 'bold' : 'normal');
+            var textElement = document.getElementById('text2');
+            textElement.style.fontWeight = (textElement.style.fontWeight == 'bold' ? 'normal' : 'bold');
+        }, 1000); // Change color every second
+    </script>
+</body>
+</html>
+

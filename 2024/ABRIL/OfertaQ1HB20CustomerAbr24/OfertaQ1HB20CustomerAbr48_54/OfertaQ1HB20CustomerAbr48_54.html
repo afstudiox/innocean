@@ -1,0 +1,1190 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @hb20sComfortPlus = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=287')
+
+set @hb20sLimitedPlus = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=288')
+
+set @hb20sPlatinumPlus = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=289')
+
+set @hb20sPlatinum = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=290')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <!-- HEADER-->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="52" 
+                  style="
+                    background-image: url('./OfertaQ1HB20/header.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                    ">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="26" height="52"></td>
+                          <td width="146" height="52">
+                            <a href="https://www.hyundai.com.br/" style="text-decoration: none;">
+                              <div width="146" height="20">&nbsp;</div>
+                            </a>
+                          </td>
+                          <td width="428" height="52"></td>
+                        </tr>
+                      </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="16" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MKV -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="462"></td>
+                <td width="568" height="462" valign="top" style="
+                  background-image: url('./OfertaQ1HB20/mkv.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  max-width: 568px;
+                  min-width: 568px;
+                ">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <!-- SPACE -->
+                    <tr>
+                      <td width="568" height="22"></td>
+                    </tr>
+
+                    <!-- TEXT -->
+                    <tr>
+                      <td width="568" height="80">
+                        <div style="
+                          line-height: 1.1;
+                          font-size: 24px; 
+                          font-weight: bold; 
+                          color: #FFFFFF; 
+                          width: 315px; 
+                          padding-left: 22px;">
+                          Oportunidade imperdível de garantir o seu HB20S com descontos especiais!
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr>
+                      <td width="568" height="213"></td>
+                    </tr>
+
+                    <!-- CARD -->
+                    <tr>
+                      <td width="568" height="96">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="262" height="96" bgcolor="#002C5F" style="color: #FFFFFF;">
+                              <div style="margin-left: 22px; ">
+                                <!-- MODELO DO CARRO -->
+                                <div style="padding-bottom: 5px; line-height: 1.1;">
+                                  <span style="display: block;font-size: 16px;font-weight: bold;">
+                                    HB20S Comfort Plus 24/24 AT
+                                  </span>
+                                </div>
+                                <!-- COLUNA 1 -->
+                                <div style="
+                                  display: inline-block; 
+                                  text-align: right; 
+                                  vertical-align: top; 
+                                  line-height: 1.1;">
+                                  <span style="display: block; font-size: 10px;">
+                                    De R$ 113.390 por
+                                  </span>
+                                  <span style="display: block; font-size: 16px; font-weight: bold; line-height: 1.1;">
+                                    R$ 109.390
+                                  </span>
+                                  <span style="display: block; font-size: 10px; line-height: 1.1;">
+                                    à vista
+                                  </span>
+                                </div>
+
+                                <!-- DIVISOR -->
+                                <div style="display: inline-block; width: 5px;"></div>
+                                <div style="
+                                  display: inline-block; 
+                                  width: 1px; 
+                                  height: 47px; 
+                                  background-image: url(./OfertaQ1HB20/bg-white.png);">
+                                </div>
+                                <div style="display: inline-block; width: 5px;"></div>
+
+                                <!-- COLUNA 2 -->
+                                <div style="
+                                  display: inline-block; 
+                                  text-align: left; 
+                                  line-height: 1.1;
+                                  vertical-align: top;">
+                                  <span style="display: block; font-size: 10px;">
+                                    Ou taxa de
+                                  </span>
+                                  <span style="display: block; font-size: 16px; font-weight: bold;">
+                                    0,99%
+                                  </span>
+                                  <span style="display: block; font-size: 10px;">
+                                    ao mês com
+                                  </span>
+                                </div>
+
+                                <!-- DIVISOR -->
+                                <div style="display: inline-block; width: 5px;"></div>
+                                <div style="
+                                  display: inline-block; 
+                                  width: 1px; 
+                                  height: 47px; 
+                                  background-image: url(./OfertaQ1HB20/bg-white.png);">
+                                </div>
+                                <div style="display: inline-block; width: 5px;"></div>
+
+                                <!-- COLUNA 3 -->
+                                <div style="
+                                  display: inline-block; 
+                                  text-align: left;
+                                  line-height: 1.1; 
+                                  vertical-align: top;">
+                                  <span style="display: block; font-size: 10px;">
+                                    entrada de 
+                                  </span>
+                                  <span style="display: block; font-size: 16px; font-weight: bold;">
+                                    50%
+                                  </span>
+                                  <span style="display: block; font-size: 10px;">
+                                    e saldo em
+                                  </span>
+                                  <span style="display: block; font-size: 10px;">
+                                    36 meses.
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr>
+                      <td width="568" height="9"></td>
+                    </tr>
+
+                    <!-- CTA -->
+                    <tr>
+                      <td width="568" height="32">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="22" height="32"></td>
+                            <td width="116" height="32" bgcolor="#007FA8">
+                              <a href="%%=RedirectTo(@hb20sComfortPlus)=%%" style="text-decoration: none;">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="116" height="32" 
+                                      style="font-size: 12px; color: #FFFFFF; text-align: center;">
+                                      Quero garantir
+                                    </td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                            <td width="430" height="32"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr>
+                      <td width="568" height="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="16" height="462"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="42" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MAIN TEXT -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="91" height="42"></td>
+                <td width="420" height="42" style="font-size: 14px;">
+                  <p>
+                    Olá, %%firstname_%%.
+                  </p>
+                  <p>
+                    <strong>Chegou a oportunidade que você esperava para garantir o carro que você sempre quis!</strong> Preparamos descontos e condições imperdíveis para você sair de Novo Hyundai HB20S com tudo o que você precisa e só encontra em um Hyundai:
+                  </p>
+                </td>
+                <td width="89" height="42"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="42" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 1 -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="122"></td>
+                <td width="357" valign="top" bgcolor="#FFFFFF">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <!-- CARRO FOTO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="162">
+                        <img width="357" height="162" src="./OfertaQ1HB20/hb20s-limited.png" alt="HB20S Limited Plus MT">
+                      </td>
+                    </tr>
+
+                    <!-- CARRO MODELO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="34" valign="top" style="font-size: 18px; text-align: center;">
+                        <strong>HB20S Limited Plus MT</strong>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- PREÇO E CONDIÇÕES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="75">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="115" height="75"></td>
+                            <td width="242" height="75" style="line-height: 1.1;">
+                              <span style="display: block; font-size: 10px;">Entrada + 48 vezes de</span>
+                              <span style="display: block; font-size: 25px; font-weight: bold;">R$ 829,00</span>
+                              <span style="display: block; font-size: 10px;">+ parcela final.</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- FEATURES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="35"></td>
+                            <td width="327" height="35">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <!-- LINHA 1 -->
+                                <tr>
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon1.png" alt="Piloto Automático">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Piloto automático e limitador de velocidade.
+                                    </span>
+                                  </td>
+                                </tr>
+
+                                <!-- SPACE -->
+                                <tr>
+                                  <td height="8"></td>
+                                </tr>
+
+                                <!-- LINHA 2 -->
+                                <tr >
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon2.png" alt="Central Multimídia">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Central multimídia blueMedia® touchscreen de 8”.
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- CTA -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="32" bgcolor="#FFFFFF">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="120" height="32"></td>
+                            <td width="116" height="32" bgcolor="#002C5F">
+                              <a href="%%=RedirectTo(@hb20sLimitedPlus)=%%" style="text-decoration: none;">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="116" height="32" 
+                                      style="text-align: center; font-size: 12px; color: #FFFFFF;">
+                                      Saiba mais!
+                                    </td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                            <td width="120" height="32"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                   
+
+                  </table>
+                </td>
+                <td width="121" height="401"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="42" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 2 -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="122"></td>
+                <td width="357" valign="top" bgcolor="#FFFFFF">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <!-- CARRO FOTO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="162">
+                        <img width="357" height="162" 
+                        src="./OfertaQ1HB20/hb20s-platinum.png" alt="HB20S Platinum Plus AT">
+                      </td>
+                    </tr>
+
+                    <!-- CARRO MODELO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="34" valign="top" style="font-size: 18px; text-align: center;">
+                        <strong>HB20S Platinum Plus AT</strong>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- PREÇO E CONDIÇÕES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="47" height="93"></td>
+                            <!-- COLUNA 1 -->
+                            <td style="line-height: 1.1;">
+                              <span style="display: block; font-size: 10px;">De R$ 128.490 por</span>
+                              <span style="display: block; font-size: 25px; font-weight: bold;">R$ 121.990</span>
+                            </td>
+                            <!-- DIVISOR -->
+                            <td>
+                              <div style="display: inline-block; width: 5px;"></div>
+                              <div 
+                                style="display: inline-block; width: 1px; height: 69px; background-color: #676767;">
+                              </div>
+                              <div style="display: inline-block; width: 5px;"></div>
+                            </td>
+                            <!-- COLUNA 1 -->
+                            <td style="line-height: 1.1;">
+                              <span style="display: block; font-size: 10px;">Bônus de até</span>
+                              <span style="display: block; font-size: 25px; font-weight: bold;">R$ 6.500</span>
+                              <span style="display: block; font-size: 10px; width: 90px;">de valorização na troca do seu usado.</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- FEATURES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="35"></td>
+                            <td width="327" height="35">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <!-- LINHA 1 -->
+                                <tr>
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon3.png" alt="Frenagem Autônoma">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Sistema de frenagem autônoma.
+                                    </span>
+                                  </td>
+                                </tr>
+
+                                <!-- LINHA 2 -->
+                                <tr >
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon4.png" alt="Bluelink">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Bluelink: seu carro conectado.
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- CTA -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="32" bgcolor="#FFFFFF">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="120" height="32"></td>
+                            <td width="116" height="32" bgcolor="#002C5F">
+                              <a href="%%=RedirectTo(@hb20sPlatinumPlus)=%%" style="text-decoration: none;">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="116" height="32" 
+                                      style="text-align: center; font-size: 12px; color: #FFFFFF;">
+                                      Saiba mais!
+                                    </td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                            <td width="120" height="32"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                   
+
+                  </table>
+                </td>
+                <td width="121" height="401"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="42" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <!-- CARD 3 -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="122"></td>
+                <td width="357" valign="top" bgcolor="#FFFFFF">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <!-- CARRO FOTO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="162">
+                        <img width="357" height="162" 
+                        src="./OfertaQ1HB20/hb20s-platinum2.png" alt="HB20S Platinum AT">
+                      </td>
+                    </tr>
+
+                    <!-- CARRO MODELO -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="34" valign="top" style="font-size: 18px; text-align: center;">
+                        <strong>HB20S Platinum AT</strong>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- PREÇO E CONDIÇÕES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="47" height="93"></td>
+                            <!-- COLUNA 1 -->
+                            <td style="line-height: 1.1;">
+                              <span style="display: block; font-size: 10px;">De R$ 119.290 por</span>
+                              <span style="display: block; font-size: 25px; font-weight: bold;">R$ 112.790</span>
+                            </td>
+                            <!-- DIVISOR -->
+                            <td>
+                              <div style="display: inline-block; width: 5px;"></div>
+                              <div 
+                                style="display: inline-block; width: 1px; height: 69px; background-color: #676767;">
+                              </div>
+                              <div style="display: inline-block; width: 5px;"></div>
+                            </td>
+                            <!-- COLUNA 1 -->
+                            <td style="line-height: 1.1;">
+                              <span style="display: block; font-size: 10px;">Bônus de até</span>
+                              <span style="display: block; font-size: 25px; font-weight: bold;">R$ 6.500</span>
+                              <span style="display: block; font-size: 10px; width: 90px;">de valorização na troca do seu usado.</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- DIVISOR -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="2"></td>
+                            <td width="297" height="2">
+                              <div style="width: 130px; height: 1px; background-color: #676767;"></div>
+                              <div style="width: 297px; height: 1px; background-color: #676767;"></div>
+                            </td>
+                            <td width="30" height="2"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- FEATURES -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="30" height="35"></td>
+                            <td width="327" height="35">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <!-- LINHA 1 -->
+                                <tr>
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon5.png" alt="Smart Trunk">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Smart Trunk.
+                                    </span>
+                                  </td>
+                                </tr>
+
+                                <!-- LINHA 2 -->
+                                <tr >
+                                  <td width="35" height="35">
+                                    <img width="35" src="./OfertaQ1HB20/icon4.png" alt="Bluelink">
+                                  </td>
+                                  <td width="292" height="35">
+                                    <span style="display: block; font-size: 12px; padding-left: 8px;">
+                                      Bluelink: seu carro conectado.
+                                    </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- SPACE -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="357" height="12"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- CTA -->
+                    <tr bgcolor="#F6F3F2">
+                      <td width="357" height="32" bgcolor="#FFFFFF">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="120" height="32"></td>
+                            <td width="116" height="32" bgcolor="#002C5F">
+                              <a href="%%=RedirectTo(@hb20sPlatinum)=%%" style="text-decoration: none;">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="116" height="32" 
+                                      style="text-align: center; font-size: 12px; color: #FFFFFF;">
+                                      Saiba mais!
+                                    </td>
+                                  </tr>
+                                </table>
+                              </a>
+                            </td>
+                            <td width="120" height="32"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                   
+
+                  </table>
+                </td>
+                <td width="121" height="401"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="24" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FINAL TEXT -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="42" bgcolor="#FFFFFF" style="text-align: center; font-size: 17px; font-weight: bold;">
+                  Acelere e não perca essa oportunidade! <br>
+                  É por tempo limitado.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="24" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVISOR -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="1"></td>
+                <td width="568" height="1" bgcolor="#676767"></td>
+                <td width="16" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="24" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ICONES -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="51" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/proprietarios.html?anchor=Garantia" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./OfertaQ1HB20/garantia.png" 
+                      alt="5 anos de garantia sem limite de quilometragem.">
+                  </a>  
+                </td>
+                <td width="124" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/proprietarios.html?anchor=Assistencia24hrs" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./OfertaQ1HB20/assistencia.png" 
+                      alt="Assistência 100% treinada pela própria Hyundai.">
+                    </a>
+                </td>
+                <td width="127" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/ofertas.html" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./OfertaQ1HB20/valor.png" 
+                      alt="Excelente valor residual.">
+                    </a>
+                </td>
+                <td width="96" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/concessionarias.html" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./OfertaQ1HB20/concessionaria.png" 
+                      alt="Concessionárias próximas a você.">
+                  </a>
+                </td>
+                <td width="42" height="40"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <!-- ICONES LEGENDAS -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="145" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  5 anos de garantia sem <br>
+                  limite de quilometragem.
+                </td>
+                <td width="179" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Assistência 100% treinada <br>
+                  pela própria Hyundai.
+                </td>
+                <td width="158" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Excelente valor residual.
+                </td>
+                <td width="118" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Concessionárias <br>próximas a você.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- REDES SOCIAIS -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="60">&nbsp;</td>
+
+                <td width="30">
+                  <img
+                    src="./OfertaQ1HB20/footer-ibama.png"
+                    width="30"
+                    alt="Logotipo Ibama."
+                    style="display: inline;"
+                  />
+                </td>
+
+                <td width="10" height="60"></td>
+
+                <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+                <td width="262" height="60" style="font-size: 12px; color: #676767;">
+                  Paz no trânsito começa por você.
+                </td>
+
+                <td
+                  width="60"
+                  height="40"
+                  style="
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #676767;
+                    font-weight: bold;
+                  "
+                >
+                  Siga-nos:
+                </td>
+
+                <td>
+                  <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-blog.png"
+                      width="26"
+                      height="26"
+                      alt="Blog"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.facebook.com/hyundaibr/">
+                    <img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-facebook.png"
+                      width="26"
+                      height="26"
+                      alt="Facebook"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.youtube.com/user/hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-youtube.png"
+                      width="26"
+                      height="26"
+                      alt="Youtube"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.instagram.com/hyundaibr/"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-instagram.png"
+                      width="26"
+                      height="26"
+                      alt="Instagram"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-linkedin.png"
+                      width="26"
+                      height="26"
+                      alt="LinkedIn"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.tiktok.com/@hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./OfertaQ1HB20/footer-tiktok.png"
+                      width="26"
+                      height="26"
+                      alt="Tiktok"
+                  /></a>
+                </td>
+
+                <td width="16" height="60">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXTO LEGAL -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16"></td>
+                <td
+                  width="568"
+                  valign="top"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: justify;
+                  "
+                >
+                <br />
+                <strong>HB20S Comfort Plus AT</strong>
+                <br /><br />
+                  HB20s Comfort Plus TGDI 1.0L com transmissão automática - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 113.390 com pintura preto ônix e frete incluso por R$ 109.390 com bônus cash de até R$ 4.000. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site www.hyundai.com.br.
+                  <br /><br />
+                  <strong>HB20S Limited Plus 1.0L MT</strong>
+                  <br /><br />
+                  HB20S Limited Plus 1.0L com transmissão mecânica - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 100.590,00 com pintura metálica e frete incluso. Entrada de R$ 59.565,27 (59,22%), saldo em 48 parcelas mensais no valor de R$ 829,00, e uma parcela final no valor de R$ 34.983,80. Preço total do veículo com os encargos é de R$ 134.341,07. Taxa de juros para o financiamento simulado é de 1,53% a.m. e 19,99% (CET: 1,81% a.m. e 23,95% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Para efetivar a recompra do veículo Hyundai HB20 ou Hyundai Creta seminovo por quantia equivalente a 80% do valor da Tabela FIPE conforme o Programa Compra Certa Hyundai, devem ser atendidos os critérios de avaliação determinados no Manual de Recompra Garantida, disponibilizado no website da montadora www.hyundai.com.br. As condições da recompra do veículo seminovo e a aquisição de um Hyundai 0 km pelo Programa Compra Certa Hyundai são estabelecidas por meio de negociação feita exclusivamente entre a concessionária HMB e o cliente sem qualquer responsabilidade da Hyundai Motor Brasil Montadora de Automóveis Ltda. e da Hyundai Financiamentos (Banco Hyundai Capital Brasil S.A.). Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/03/2024 a 30/04/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br.
+                  <br /><br />
+                  <strong>HB20s Platinum Plus TGDI 1.0L AT</strong>
+                  <br /><br />
+                  HB20s Platinum Plus TGDI 1.0L com transmissão automática - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 128.490 com pintura preto ônix e frete incluso por R$ 121.990 com usado na troca com bônus de até R$ 6.500 na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site www.hyundai.com.br.
+                  <br /><br />
+                  <strong>HB20s PlatinumTGDI 1.0L AT</strong>
+                  <br /><br /> 
+                  HB20s PlatinumTGDI 1.0L com transmissão automática - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 119.290 com pintura preto ônix e frete incluso por R$ 112.790 com usado na troca com bônus de até R$ 6.500 na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site www.hyundai.com.br.
+                  <br><br>
+                  <strong>Valores sujeitos a alteração e não aplicáveis à Zona Franca de Manaus. Consulte concessionárias participantes.</strong>
+                </td>
+                <td width="16"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BUSINESS INFORMATION & OPT OUT-->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16">&nbsp;</td>
+                <td
+                  width="568"
+                  height="60"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #000000;
+                    text-align: center;
+                  "
+                >
+                  <br>
+                  Se você não deseja mais receber e-mails como este,
+                  <a href="%%subscription_center_url%%">clique aqui</a>.
+                  <br><br>
+                  Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                  13413-900 - Piracicaba-SP
+                  <br><br>
+                  Esta é uma mensagem automática. Por favor, não responda este
+                  e-mail. Caso deseje,
+                  <a href="%%profile_center_url%%">fale conosco.</a>.
+                  <br><br>
+                  This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                  <br><br><br>
+                </td>
+                <td width="16">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>

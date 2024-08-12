@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Tables</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; text-align: center;}
+
+    p { margin: 0; padding: 0; }
+    div { border: 2px solid #676767;}
+    .one-column { width: 100% !important; }
+    .two-column { width: 50% !important;}
+    .left { float: right !important; }
+    .right { float: left !important; }
+  </style>
+  <!--[if true]>
+    <style type="text/css">
+      p { margin: 0; padding: 0; }
+      div { border: 2px solid #676767;}
+      td.container { width: 100% !important; }
+      td.two-column { width: 50% !important;}
+      td.left { float: right !important; }
+      td.right { float: left !important; 
+    </style>
+  <![endif]-->
+</head>
+<body>
+  <!--[if true]>
+    <table role="presentation" width="600" align="center" cellpading="0" cellspacing="0" border="0">
+      <tr>
+        <td class="container">
+        <![endif]-->
+          <div class="two-column" style="margin:0 auto; overflow:auto;">
+          <!--[if true]>
+            <table role="presentation" width="600" align="center" cellpading="0" cellspacing="0" border="0">
+              <tr>
+                <td class="left">
+          <![endif]-->
+          <div class="two-column left" style="font-family:Arial, sans-serif; font-size:16px; color:#333333; padding: 10px;">
+            <p>Left paragraph of text</p>
+          </div>        
+        <!--[if true]>
+        </td>
+        <td class="right">
+        <![endif]-->
+          <div class="two-column right" style="font-family:Arial, sans-serif; font-size:16px; color:#333333; padding: 10px;">
+            <p>Right paragraph of text.</p>
+          </div>
+        <!--[if true]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+          </div>
+        <!--[if true]>
+		    </td>
+	    </tr>
+    </table>
+  <![endif]-->
+</body>
+</html>

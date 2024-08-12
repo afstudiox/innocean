@@ -1,0 +1,1040 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @cretaLimited = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=383')
+
+set @cretaPlatinum = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=384')
+
+set @hb20SLimited = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=385')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyundai</title>
+</head>
+
+<style>
+  /* reset css */
+  body, tr, td, p, img, a, div, hr, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+  }
+
+</style>
+
+<body>
+  <table width="600" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0">
+    <tbody>
+      <!-- HEADER -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="122">
+                <a 
+                  href="https://www.hyundai.com.br/" 
+                  style="text-decoration: none;">
+                  <img width="600" alt="Hyundai" style="display: block;"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/5ea8e107-9e7f-4db0-ac76-a4aaeffa1688.png" >
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BANNER -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16" height="360">
+              <td width="568" height="360">
+                  <img width="568" height="360" style="display: block;"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/e9aa35e5-a544-4828-8fa4-b5e322dd6665.png"
+                  alt="Escolha o campeão: Um dos carros mais vendidos do país é o seu próximo Hyundai. Aproveite ofertas imbatíveis para garantir o seu!" >
+              </td>
+              <td width="16" height="360">
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="43"></td>
+              <td width="514" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
+                <p>Olá, %%firstname_%%.</p>
+                <br>
+                <p>
+                  Você não precisa esperar o apito final para trocar de carro. <strong>Chegou a hora de confirmar a substituição e garantir o seu Hyundai 0 km!</strong>
+                </p>
+                <br>
+                <p>
+                  Preparamos ofertas imperdíveis para você, que sabe que o time da Hyundai é o campeão, garantir o seu próximo Hyundai CRETA ou Novo Hyundai HB20S, todos 100% testados. 
+                </p>
+                <br>
+                <p>
+                  Aproveite e garanta já o seu com 5 anos de garantia sem limite de quilometragem:
+                </p>
+
+              </td>
+              <td width="43"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="49"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="49"></td>
+              <td width="468" height="49" style="font-size: 16px; font-weight: bold;">
+                Linha CRETA Nova Geração:
+              </td>
+              <td width="42" height="49"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO DIVISOR -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="1" bgcolor="#FFFFFF"></td>
+              <td width="16" height="1"></td>
+              <td width="218" height="1" bgcolor="#676767"></td>
+              <td width="250" height="1"></td>
+              <td width="42" height="1" bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="16"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="16"></td>
+              <td width="42" height="16"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+              <td width="221" height="57"  bgcolor="#002C5F">
+                <img width="221" height="57" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c029f573-3cab-4de2-9e22-b324e255b930.png" alt="Limited Safety" style="display: block;" >
+              </td>
+              <td width="138" height="57"></td>
+              <td width="157" height="57" style="font-size: 12px; color: #676767;" >
+                Garantia:
+                <img width="105" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/46dec956-aba9-405e-a851-ec996149f7e8.png" alt="5 anos de garantia sem limite de quilometragem" style="display: block; padding-top: 6px;">
+              </td>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED PHOTO -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="205"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="205">
+                <img width="484" height="205" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d63a7409-21be-43e6-ac3b-d067003ff269.png" alt="Creta Limited" style="display: block;" >
+              </td>
+              <td width="42" height="205"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED PRICE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="64"  bgcolor="#FFFFFF"></td>
+              <td width="87" height="64"></td>
+              <td width="147" height="64" style="font-size: 14px;">
+                Bônus de <br>
+                <span style="font-size: 28px;"><strong>R$ 13.300!</strong></span>
+              </td>
+              <td width="1" height="64" bgcolor="#676767"></td>
+              <td width="12" height="64"></td>
+              <td width="237" height="64" style="font-size: 14px;">
+                De <span style="text-decoration: line-through;">R$ 156.490</span> por <br>
+                <span style="font-size: 28px;"><strong>R$ 143.390.</strong></span>
+              </td>
+              <td width="42" height="64"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="20"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="20"></td>
+              <td width="42" height="20"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED CTA -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="36"  bgcolor="#FFFFFF"></td>
+              <td width="87" height="36"></td>
+              <td width="311" height="36">
+                <a href="%%=RedirectTo(@cretaLimited)=%%" style="text-decoration: none;">
+                  <img width="311" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c7660cf8-2539-49f1-a380-68bfe6838efc.png" alt="Quero garantir">
+                </a>
+              </td>
+              <td width="86" height="36"></td>
+              <td width="42" height="36"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO LIMITED DIVISOR -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="1" bgcolor="#FFFFFF"></td>
+              <td width="36" height="1"></td>
+              <td width="412" height="1" bgcolor="#676767"></td>
+              <td width="36" height="1"></td>
+              <td width="42" height="1"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+              <td width="167" height="57"  bgcolor="#002C5F">
+                <img width="167" height="57" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d6bab160-ae5e-4a7f-9050-4f59da12c43f.png" alt="Platinum" style="display: block;" >
+              </td>
+              <td width="192" height="57"></td>
+              <td width="157" height="57" style="font-size: 12px; color: #676767;" >
+                Garantia:
+                <img width="105" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/46dec956-aba9-405e-a851-ec996149f7e8.png" alt="5 anos de garantia sem limite de quilometragem" style="display: block; padding-top: 6px;">
+              </td>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM PHOTO -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="205"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="205">
+                <img width="484" height="205" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/dd1aed3f-c0f4-4402-98a9-3189611afb53.png" alt="Creta Platinum" style="display: block;" >
+              </td>
+              <td width="42" height="205"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM PRICE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="64"  bgcolor="#FFFFFF"></td>
+              <td width="87" height="64"></td>
+              <td width="147" height="64" style="font-size: 14px;">
+                Bônus de <br>
+                <span style="font-size: 28px;"><strong>R$ 13.300!</strong></span>
+              </td>
+              <td width="1" height="64" bgcolor="#676767"></td>
+              <td width="12" height="64"></td>
+              <td width="237" height="64" style="font-size: 14px;">
+                De <span style="text-decoration: line-through;">R$ 172.690</span> por <br>
+                <span style="font-size: 28px;"><strong>R$ 159.390.</strong></span>
+              </td>
+              <td width="42" height="64"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="20"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="20"></td>
+              <td width="42" height="20"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM CTA -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="36"  bgcolor="#FFFFFF"></td>
+              <td width="87" height="36"></td>
+              <td width="311" height="36">
+                <a href="%%=RedirectTo(@cretaPlatinum)=%%" style="text-decoration: none;">
+                  <img width="311" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c7660cf8-2539-49f1-a380-68bfe6838efc.png" alt="Quero garantir">
+                </a>
+              </td>
+              <td width="86" height="36"></td>
+              <td width="42" height="36"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO PLATINUM SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO TITLE FEATURES -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="32"></td>
+              <td width="468" height="32" style="font-size: 16px; color: #676767;" valign="top">
+                Confira alguns dos itens de série inclusos nas versões:
+              </td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO GIF FEATURES -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="137"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="137"></td>
+              <td width="452" height="137">
+                <img width="452" height="137" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/9d147347-1290-4c37-bc17-b9c80a62f512.gif" alt="Features" style="display: block;">
+              </td>
+              <td width="16" height="137"></td>
+              <td width="42" height="137"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CRETA NOVA GERACAO SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="16"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="16"></td>
+              <td width="42" height="16"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="49"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="49"></td>
+              <td width="468" height="49" style="font-size: 16px; font-weight: bold;">
+                Novo Hyundai HB20S
+              </td>
+              <td width="42" height="49"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S DIVISOR -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="1" bgcolor="#FFFFFF"></td>
+              <td width="16" height="1"></td>
+              <td width="164" height="1" bgcolor="#676767"></td>
+              <td width="304" height="1"></td>
+              <td width="42" height="1" bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="16"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="16"></td>
+              <td width="42" height="16"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+              <td width="205" height="57"  bgcolor="#002C5F">
+                <img width="205" height="57" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/5091b3da-6ffd-4cfb-b79b-6d6041ca15c2.png" alt="Limited Plus" style="display: block;" >
+              </td>
+              <td width="154" height="57"></td>
+              <td width="157" height="57" style="font-size: 12px; color: #676767;" >
+                Garantia:
+                <img width="105" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/46dec956-aba9-405e-a851-ec996149f7e8.png" alt="5 anos de garantia sem limite de quilometragem" style="display: block; padding-top: 6px;">
+              </td>
+              <td width="42" height="57"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S PHOTO -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="205"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="205">
+                <img width="484" height="205" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/8dc1aa98-d4de-47bc-9ce6-23fba912adb4.png" alt="HB20S Limited Plus" style="display: block;" >
+              </td>
+              <td width="42" height="205"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S PRICE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="77"  bgcolor="#FFFFFF"></td>
+              <td width="51" height="77"></td>
+              <td width="132" height="77" style="font-size: 14px;">
+                Bônus de até <br>
+                <span style="font-size: 28px;"><strong>R$ 5.000.</strong></span>
+              </td>
+              <td width="1" height="77" bgcolor="#676767"></td>
+              <td width="12" height="77"></td>
+              <td width="138" height="77" style="font-size: 14px;">
+                De <span style="text-decoration: line-through;">R$ 102.090</span> por <br>
+                <span style="font-size: 28px;"><strong>R$ 97.090</strong></span>
+                <br>à vista.
+              </td>
+              <td width="1" height="77" bgcolor="#676767"></td>
+              <td width="10" height="77"></td>
+              <td width="139" height="77" style="font-size: 14px;">
+                Ou taxas <br>
+                a partir de <br>
+                <span style="font-size: 28px;"><strong>0,99%</strong></span>
+                <br>em 36 meses.
+              </td>
+              <td width="42" height="77"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="20"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="20"></td>
+              <td width="42" height="20"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S CTA -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="36"  bgcolor="#FFFFFF"></td>
+              <td width="87" height="36"></td>
+              <td width="311" height="36">
+                <a href="%%=RedirectTo(@hb20SLimited)=%%" style="text-decoration: none;">
+                  <img width="311" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c7660cf8-2539-49f1-a380-68bfe6838efc.png" alt="Quero garantir">
+                </a>
+              </td>
+              <td width="86" height="36"></td>
+              <td width="42" height="36"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S FEATURES TITLE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="32"></td>
+              <td width="468" height="32" style="font-size: 16px; color: #676767;" valign="top">
+                Confira alguns dos itens de série inclusos no modelo:
+              </td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S FEATURES -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="137"  bgcolor="#FFFFFF"></td>
+              <td width="16" height="137"></td>
+              <td width="452" height="137">
+                <img width="452" height="137" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/75c7cd52-a8d4-437b-afd5-ba31a13176e1.gif" alt="Features" style="display: block;">
+              </td>
+              <td width="16" height="137"></td>
+              <td width="42" height="137"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- NOVO HYUNDAI HB20S SPACE -->
+      <tr bgcolor="#F6F3F2">
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="16"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="16"></td>
+              <td width="42" height="16"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="74" height="32"  bgcolor="#FFFFFF"></td>
+              <td width="484" height="32"></td>
+              <td width="42" height="32"  bgcolor="#FFFFFF"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- FINAL TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000; font-weight: bold; text-align: center;">
+                Corra e não perca essa chance!
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td width="568" 
+                style="border-top: 1px solid #676767; height: 0; line-height: 0;">
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="24"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ICONES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="51" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Garantia" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/9246a410-1ee9-44bc-983d-7dc413082aa3.png" 
+                    alt="5 anos de garantia sem limite de quilometragem.">
+                </a>  
+              </td>
+              <td width="124" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Assistencia24hrs" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/1102c71c-bbe8-4722-8c0b-968d1cdec79b.png" 
+                    alt="Assistência 100% treinada pela própria Hyundai.">
+                  </a>
+              </td>
+              <td width="127" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/financiamentos.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/f1c88ece-db00-4bb5-a898-5d9f7bb40a68.png" 
+                    alt="Opções de financiamento ideais para você.">
+                  </a>
+              </td>
+              <td width="96" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/concessionarias.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fc6f5cd1-44cd-4be8-950a-8dc4554773eb.png" 
+                    alt="Concessionárias próximas a você.">
+                </a>
+              </td>
+              <td width="42" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- ICONES LEGENDAS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="145" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                5 anos de garantia sem <br>
+                limite de quilometragem.
+              </td>
+              <td width="179" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Assistência 24 horas, 100%<br>
+                treinada pela própria Hyundai.
+              </td>
+              <td width="158" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Opções de financiamento <br>
+                ideais para você.
+              </td>
+              <td width="118" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Concessionárias <br>próximas a você.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BANNER RS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="26" height="231"></td>
+              <td width="568" height="231">
+                <a href="https://www.hyundai.com.br/concessionarias.html" style="text-decoration: none; display: inline-block;">
+                  <img width="568" height="231" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/25e1e545-108f-44c5-bbf4-7d39c15e86d9.png" alt="Rede de Apoio ao Rio Grande do Sul. Nossas concessionárias agora são pontos de coleta de doações. Encontre a mais próxima e contribua: Saiba onde doar" style="display: block;">
+                </a>
+              </td>
+              <td width="26" height="231"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- REDES SOCIAIS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16" height="60">&nbsp;</td>
+
+              <td width="30">
+                <img
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/776445fd-d4a3-4b29-8fce-4906f0474fc2.png
+                  "
+                  width="30"
+                  alt="Logotipo Ibama."
+                  style="display: inline;"
+                />
+              </td>
+
+              <td width="10" height="60"></td>
+
+              <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+              <td width="262" height="60" style="font-size: 12px; color: #676767;">
+                Paz no trânsito começa por você.
+              </td>
+
+              <td
+                width="60"
+                height="40"
+                style="
+                  font-family: Arial;
+                  font-size: 10px;
+                  color: #676767;
+                  font-weight: bold;
+                "
+              >
+                Siga-nos:
+              </td>
+
+              <td>
+                <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d74634bc-1375-47d3-973a-63b23c088549.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Blog"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.facebook.com/hyundaibr/">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/59fad6d6-2fd8-4a66-9c8f-27d75a92c2df.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Facebook"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.youtube.com/user/hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb7a922c-bbbf-456d-93d8-3e173b0f5919.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Youtube"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.instagram.com/hyundaibr/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fec28cbd-4579-4348-bc6c-b635f20e496c.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Instagram"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ba9868d2-ff0d-40ee-936e-bfe36c96dafa.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="LinkedIn"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.tiktok.com/@hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a6146d22-275d-4e7e-90cc-2c583bcb5866.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Tiktok"
+                /></a>
+              </td>
+
+              <td width="16" height="60">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXTO LEGAL -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td
+                width="568"
+                valign="top"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: justify;
+                "
+              >
+              <br>
+              <strong>CRETA Limited Safety 1.0L TGDI com transmissão automática 2024/2025</strong>
+              <br>
+              CRETA Limitedy Safety 1.0L TGDI com transmissão automática 2024/2025 preço público sugerido à vista (válido para todo o Brasil): de R$ 156.490 por R$ 143.190,00 à vista com pintura preto ônix e frete incluso. Promoção válida no período de 01/07/2024 a 31/07/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas.
+              <br><br>
+              <strong>CRETA Platinum Safety com teto solar 1.0L TGDI com transmissão automática 2024/2025</strong>
+              <br>
+              CRETA Platinum Safety com teto solar 1.0L TGDI com transmissão automática 2024/2025 preço público sugerido à vista (válido para todo o Brasil): de R$ 172.690 por R$ 159.390,00 à vista com pintura preto ônix e frete incluso. Promoção válida no período de 01/07/2024 a 31/07/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas.
+              <br><br>
+              <strong>HB20S Limited Plus 1.0L com transmissão mecânica - ano de fabricação/modelo 2024/2024 </strong>
+              <br>
+              HB20S Limited Plus 1.0L com transmissão mecânica - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 102.090,00 com pintura metálica e frete incluso. Entrada de R$ 51.045,00 (50%), saldo em 36 parcelas mensais no valor de R$ 1.820,99. Preço total do veículo com os encargos é de R$ 116.600,70. Taxa de juros para o financiamento simulado é de 0,99% a.m. e 12,55% (CET: 1,42% a.m. e 18,44% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/07/2024 a 31/07/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site <a href="www.susep.gov.br">www.susep.gov.br</a>, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site <a href="www.hyundai.com.br">www.hyundai.com.br</a>.
+
+              <br><br>
+
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BUSINESS INFORMATION & OPT OUT-->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16">&nbsp;</td>
+              <td
+                width="568"
+                height="60"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: center;
+                "
+              >
+                <br>
+                Se você não deseja mais receber e-mails como este,
+                <a href="%%subscription_center_url%%">clique aqui</a>.
+                <br><br>
+                Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                13413-900 - Piracicaba-SP
+                <br><br>
+                Esta é uma mensagem automática. Por favor, não responda este
+                e-mail. Caso deseje,
+                <a href="%%profile_center_url%%">fale conosco.</a>.
+                <br><br>
+                This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                <br><br><br>
+              </td>
+              <td width="16">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

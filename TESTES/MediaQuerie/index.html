@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Media Queries</title>
+  <style>
+    tr { height: 20px; }
+    .t32 { font-size: 32px; }
+    .t28 { font-size: 28px; }
+    .t24 { font-size: 24px; }
+    .t20 { font-size: 20px; }
+    .t16 { font-size: 16px; }
+    .t14 { font-size: 14px; }
+    .t12 { font-size: 12px; }
+    .t10 { font-size: 10px; }
+
+   
+    @media only screen and (max-width: 480px) {
+      .t32 { font-size: 42px; }s
+      .t28 { font-size: 38px; }
+      .t24 { font-size: 34px; }
+      .t20 { font-size: 30px; }
+      .t16 { font-size: 26px; }
+      .t14 { font-size: 26px; }
+      .t12 { font-size: 22px; }
+      .t10 { font-size: 20px; }
+    }
+
+  </style>
+</head>
+<body>
+  <table       
+    align="center"
+    width="600"
+    cellspacing="0"
+    cellpadding="0"
+    border="0">
+    <tr>
+      <td>
+        Este é um teste de alteração de tamanho de fonte, dependendo do tamanho da tela. A quebra esta programada para 480px de largura.
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr><td width="400" style="font-size: 32px;">font-size: 32px</td></tr>
+          <tr><td width="400" class="t32">font-size: 32px</td></tr>
+          <tr><td width="400" style="font-size: 28px;">font-size: 28px</td></tr>
+          <tr><td width="400" class="t28">font-size: 28px</td></tr>
+          <tr><td width="400" style="font-size: 24px;">font-size: 24px</td></tr>
+          <tr><td width="400" class="t24">font-size: 24px</td></tr>
+          <tr><td width="400" style="font-size: 20px;">font-size: 20px</td></tr>
+          <tr><td width="400" class="t20">font-size: 20px</td></tr>
+          <tr><td width="400" style="font-size: 16px;">font-size: 16px</td></tr>
+          <tr><td width="400" class="t16">font-size: 16px</td></tr>
+          <tr><td width="400" style="font-size: 14px;">font-size: 14px</td></tr>
+          <tr><td width="400" class="t14">font-size: 14px</td></tr>
+          <tr><td width="400" style="font-size: 12px;">font-size: 12px</td></tr>
+          <tr><td width="400" class="t12">font-size: 12px</td></tr>
+          <tr><td width="400" style="font-size: 10px;">font-size: 10px</td></tr>
+          <tr><td width="400" class="t10">font-size: 10px</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

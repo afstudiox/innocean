@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos gerais para clientes de e-mail compatíveis com media queries */
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .mobile-full-width {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0;">
+
+  <!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+  <td>
+  <![endif]-->
+
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; margin: auto;">
+    <tr>
+      <td>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <!--[if mso]>
+            <td width="50%" valign="top">
+            <![endif]-->
+              <td 
+                class="mobile-full-width" 
+                style="padding: 10px; background-color: #f6f3f2;">
+                <div style="max-width: 50%; margin: auto;">
+                  <p style="font-size: 16px; color: #333;">
+                    PRIMARY CONTENT 50%
+                  </p>
+                </div>
+              </td>
+            <!--[if mso]>
+            </td>
+            <td width="50%" valign="top">
+            <![endif]-->
+            <td 
+              class="mobile-full-width" 
+              style="padding: 10px; background-color: #eaeaea;">
+              <div style="max-width: 50%; margin: auto;">
+                <p 
+                  style="font-size: 16px; color: #333;">
+                    SECONDARY CONTENT 50%
+                </p>
+              </div>
+            </td>
+            <!--[if mso]>
+            </td>
+            <![endif]-->
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,664 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @cretaUltimate = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=356')
+
+set @cretaPlatinum = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=357')
+
+set @hb20sComfort = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=358')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyundai</title>
+</head>
+
+<style>
+  /* reset css */
+  body, tr, td, p, img, a, div, hr, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+  }
+
+</style>
+
+<body>
+  <table width="600" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0">
+    <tbody>
+
+      <!-- HEADER -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="52">
+                <a 
+                  href="https://www.hyundai.com.br/" 
+                  style="text-decoration: none;">
+                  <img width="600" alt="Hyundai" style="display: block;"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb068a46-a162-41a0-a28f-df4bef8bcda0.png" >
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BANNER  -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="340">
+                <a href="%%=RedirectTo(@cretaUltimate)=%%">
+                <img width="600" height="340" style="display: block;"
+                src="./assets/banner-cta.png"
+                alt="Ainda dá tempo de renovar a sua experiência Hyundai em 2024. Aproveite bônus e condições especiais para garantir o seu novo 0 km. CRETA Ultimante com bônus de até R$ 10.000 de valorização na troca do seu usado ou taxas a partir 0% a.m. Tenho interesse!" >
+              </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="58"></td>
+              <td width="484" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
+                Olá, %%firstname_%%.
+                <br><br>
+                <strong>Ainda dá tempo de passar as Festas Juninas de Hyundai 0 km!</strong>
+                <br>
+                Preparamos ofertas quentinhas, com condições imperdíveis, para você trocar de carro e garantir ainda mais qualidade de vida para o resto de 2024 com o seu próximo Hyundai:
+              </td>
+              <td width="58"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD1 -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="32"></td>
+              <td width="536" bgcolor="F6F3F2" valign="top">
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="30"></td>
+                  </tr>
+                </table>
+                <!-- MODEL CAR -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="30" height="30"></td>
+                    <td width="300" height="30" style="font-size: 22px; font-weight: bold;">CRETA Platinum Safety</td>
+                    <td width="176" height="30" style="text-align: right; font-size: 12px;">com teto solar</td>
+                    <td width="30" height="30"></td>
+                  </tr>
+                </table>
+                <!-- PHOTO CAR -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="30" ></td>
+                    <td width="476" style="display: block;">
+                      <img width="476" height="182" src="./assets/creta-platinum.png" alt="CRETA Platinum Safety">
+                    </td>
+                    <td width="30"></td>
+                  </tr>
+                </table>
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="16"></td>
+                  </tr>
+                </table>
+                <!-- PRICE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130"></td>
+                    <td width="139" valign="top" style="font-size: 14px; color: #000000;">
+                      Bônus de até<br>
+                      <span style="font-size: 28px; font-weight: bold;">R$ 9.000</span> <br>
+                      de valorização na <br>
+                      troca do seu usado.
+                    </td>
+                    <td width="1" bgcolor="#676767"></td>
+                    <td width="26"></td>
+                    <td width="210" valign="top" style="font-size: 14px; color: #000000;">
+                      ou taxas <br>
+                      a partir de <br>
+                      <span style="font-size: 28px; font-weight: bold;">0,99%</span> <br>
+                      em 36 meses.
+                    </td>
+                    <td width="30"></td>
+                  </tr>
+                </table>
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="16"></td>
+                  </tr>
+                </table>
+                <!-- CTA -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" bgcolor="#002C5F">
+                  <tr>
+                    <td width="536" height="46">
+                      <a href="%%=RedirectTo(@cretaPlatinum)=%%">
+                        <img width="536" height="46" src="./assets/cta.gif" alt="Tenho interesse">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD2 -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="32"></td>
+              <td width="536" bgcolor="F6F3F2" valign="top">
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="30"></td>
+                  </tr>
+                </table>
+                <!-- MODEL CAR -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="30" height="30"></td>
+                    <td width="476" height="30" style="font-size: 22px; font-weight: bold;">HB20S Comfort Plus</td>
+                    <td width="30" height="30"></td>
+                  </tr>
+                </table>
+                <!-- PHOTO CAR -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="30" ></td>
+                    <td width="476" style="display: block;">
+                      <img width="476" height="182" src="./assets/hb20-comfort.png" alt="HB20S Comfort Plus">
+                    </td>
+                    <td width="30"></td>
+                  </tr>
+                </table>
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="16"></td>
+                  </tr>
+                </table>
+                <!-- PRICE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="106"></td>
+                    <td width="168" valign="top" style="font-size: 14px; color: #000000;">
+                      De <span style="text-decoration: line-through;">R$ 114.990</span> por <br>
+                      <span style="font-size: 28px; font-weight: bold;">R$110.990</span> <br>
+                      à vista.
+                    </td>
+                    <td width="1" bgcolor="#676767"></td>
+                    <td width="26"></td>
+                    <td width="210" valign="top" style="font-size: 14px; color: #000000;">
+                      ou taxas <br>
+                      a partir de <br>
+                      <span style="font-size: 28px; font-weight: bold;">0,99%</span> <br>
+                      em 36 meses.
+                    </td>
+                    <td width="30"></td>
+                  </tr>
+                </table>
+                <!-- SPACE -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="536" height="16"></td>
+                  </tr>
+                </table>
+                <!-- CTA -->
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" bgcolor="#002C5F">
+                  <tr>
+                    <td width="536" height="46">
+                      <a href="%%=RedirectTo(@hb20sComfort)=%%">
+                        <img width="536" height="46" src="./assets/cta.gif" alt="Tenho interesse">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="85"></td>
+              <td width="431" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
+                <strong>Acelere e aproveite as Festas Juninas de Hyundai 0 km!</strong>
+              </td>
+              <td width="84"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td width="568" 
+                style="border-top: 1px solid #676767; height: 0; line-height: 0;">
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="24"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ICONES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="51" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Garantia" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/9246a410-1ee9-44bc-983d-7dc413082aa3.png" 
+                    alt="5 anos de garantia sem limite de quilometragem.">
+                </a>  
+              </td>
+              <td width="124" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Assistencia24hrs" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/1102c71c-bbe8-4722-8c0b-968d1cdec79b.png" 
+                    alt="Assistência 100% treinada pela própria Hyundai.">
+                  </a>
+              </td>
+              <td width="127" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/financiamentos.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/f1c88ece-db00-4bb5-a898-5d9f7bb40a68.png" 
+                    alt="Opções de financiamento ideais para você.">
+                  </a>
+              </td>
+              <td width="96" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/concessionarias.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fc6f5cd1-44cd-4be8-950a-8dc4554773eb.png" 
+                    alt="Concessionárias próximas a você.">
+                </a>
+              </td>
+              <td width="42" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- ICONES LEGENDAS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="145" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                5 anos de garantia sem <br>
+                limite de quilometragem.
+              </td>
+              <td width="179" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Assistência 24 horas, 100%<br>
+                treinada pela própria Hyundai.
+              </td>
+              <td width="158" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Opções de financiamento <br>
+                ideais para você.
+              </td>
+              <td width="118" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Concessionárias <br>próximas a você.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BANNER RS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="26" height="231"></td>
+              <td width="568" height="231">
+                <a href="https://www.hyundai.com.br/concessionarias.html" style="text-decoration: none; display: inline-block;">
+                  <img width="568" height="231" src="https://i.postimg.cc/5tMpC7DM/banner-rs.png" alt="Rede de Apoio ao Rio Grande do Sul. Nossas concessionárias agora são pontos de coleta de doações. Encontre a mais próxima e contribua: Saiba onde doar" style="display: block;">
+                </a>
+              </td>
+              <td width="26" height="231"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- REDES SOCIAIS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16" height="60">&nbsp;</td>
+
+              <td width="30">
+                <img
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/776445fd-d4a3-4b29-8fce-4906f0474fc2.png
+                  "
+                  width="30"
+                  alt="Logotipo Ibama."
+                  style="display: inline;"
+                />
+              </td>
+
+              <td width="10" height="60"></td>
+
+              <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+              <td width="262" height="60" style="font-size: 12px; color: #676767;">
+                Paz no trânsito começa por você.
+              </td>
+
+              <td
+                width="60"
+                height="40"
+                style="
+                  font-family: Arial;
+                  font-size: 10px;
+                  color: #676767;
+                  font-weight: bold;
+                "
+              >
+                Siga-nos:
+              </td>
+
+              <td>
+                <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d74634bc-1375-47d3-973a-63b23c088549.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Blog"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.facebook.com/hyundaibr/">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/59fad6d6-2fd8-4a66-9c8f-27d75a92c2df.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Facebook"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.youtube.com/user/hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb7a922c-bbbf-456d-93d8-3e173b0f5919.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Youtube"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.instagram.com/hyundaibr/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fec28cbd-4579-4348-bc6c-b635f20e496c.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Instagram"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ba9868d2-ff0d-40ee-936e-bfe36c96dafa.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="LinkedIn"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.tiktok.com/@hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a6146d22-275d-4e7e-90cc-2c583bcb5866.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Tiktok"
+                /></a>
+              </td>
+
+              <td width="16" height="60">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXTO LEGAL -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td
+                width="568"
+                valign="top"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: justify;
+                "
+              >
+              <strong>CRETA Ultimate 2.0 AT 24/25 - Bônus de R$ 10.000 no usado ou Taxa 0%</strong>
+              <br>
+              CRETA Ultimate 2.0L, com transmissão automática 2023/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 179.890,00 com pintura preto ônix e frete incluso. Entrada de R$ 107.934,00 (60%), saldo em 12 parcelas mensais no valor de R$ 6.309,30. Preço total do veículo com os encargos é de R$ 183.645,62. Taxa de juros para o financiamento simulado é de 0,00% a.m. e 0,00% (CET: 0,79% a.m. e 9,92% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/06/2024 a 30/06/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site <a href="www.susep.gov.br">www.susep.gov.br</a>, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site <a href="www.hyundai.com.br">www.hyundai.com.br</a>.
+              <br><br>
+              <strong>CRETA Platinum Safety c/ Teto 1.0 TGDI AT 24/25 - Bônus de R$ 9.000 no usado ou Taxa 0.99%</strong>
+              <br>
+              CRETA Platinum Safety 1.0L TGDI com teto solar e transmissão automática 2024/2025 preço público sugerido à vista (válido para todo o Brasil): R$ 171.890,00 com pintura preto ônix e frete incluso com bônus de até R$ 9.000 de valorização na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Ou Entrada de R$ 85.945,00 (50%), saldo em 36 parcelas mensais no valor de R$ 3.013,63. Preço total do veículo com os encargos é de R$ 194.435,83. Taxa de juros para o financiamento simulado é de 0,99% a.m. e 12,55% (CET: 1,32% a.m. e 17,01% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/06/2024 a 30/06/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site <a href="www.susep.gov.br">www.susep.gov.br</a>, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site <a href="www.hyundai.com.br">www.hyundai.com.br</a>.
+              <br><br>
+              <strong>HB20s Comfort Plus 1.0L TGDI MT 24/25 - Por R$ 110.990 ou Taxa 0.99%
+              </strong>
+              <br>
+              HB20S Comfort Plus 1.0L TGDI com transmissão automática - ano de fabricação/modelo 2024/2025 preço público sugerido à vista (válido para todo o Brasil): R$ 114.990,00 com pintura preto ônix e frete incluso. Entrada de R$ 57.495,00 (50%), saldo em 36 parcelas mensais no valor de R$ 2.041,41. Preço total do veículo com os encargos é de R$ 130.985,70. Taxa de juros para o financiamento simulado é de 0,99% a.m. e 12,55% (CET: 1,39% a.m. e 18,04% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/06/2024 a 30/06/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site  <a href="www.susep.gov.br">www.susep.gov.br</a>, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site <a href="www.hyundai.com.br">www.hyundai.com.br</a>.
+
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BUSINESS INFORMATION & OPT OUT-->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16">&nbsp;</td>
+              <td
+                width="568"
+                height="60"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: center;
+                "
+              >
+                <br>
+                Se você não deseja mais receber e-mails como este,
+                <a href="%%subscription_center_url%%">clique aqui</a>.
+                <br><br>
+                Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                13413-900 - Piracicaba-SP
+                <br><br>
+                Esta é uma mensagem automática. Por favor, não responda este
+                e-mail. Caso deseje,
+                <a href="%%profile_center_url%%">fale conosco.</a>.
+                <br><br>
+                This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                <br><br><br>
+              </td>
+              <td width="16">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

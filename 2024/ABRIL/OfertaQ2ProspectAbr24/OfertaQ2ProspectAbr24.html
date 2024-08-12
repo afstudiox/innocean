@@ -1,0 +1,1101 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @hb20ComfortPlus = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=295')
+
+set @hb20sPlatinumTGDI = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=296')
+
+set @hb20sPlatinumSafety = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=297')
+
+set @cretaLimited = Concat('https://www.hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=298')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* reset css */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <!-- HEADER-->
+        <tr bgcolor="#002C5F">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="52" 
+                  style="
+                    background-image: url('./assets/header.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                    ">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="16" height="52"></td>
+                          <td width="146" height="52">
+                            <a href="https://www.hyundai.com.br/" style="text-decoration: none;">
+                              <div width="146" height="20">&nbsp;</div>
+                            </a>
+                          </td>
+                          <td width="438" height="52"></td>
+                        </tr>
+                      </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#002C5F">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="19"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MKV -->
+        <tr bgcolor="#FFFFFF">
+          <td width="600" height="361">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <!-- C1 -->
+                <td width="28" height="361" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="28" height="247" bgcolor="#002C5F"></td>
+                    </tr>
+                  </table>
+                </td>
+
+                <!-- CENTRAL -->
+                <td width="545" height="361" valign="bottom"
+                  style="
+                  background-image: url('./assets/banner.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  max-width: 545px;
+                  min-width: 545px;
+                  border-bottom-left-radius: 12px;
+                  border-bottom-right-radius: 12px;
+                  ">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <!-- L1 -->
+                    <tr>
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="19" height="51"></td>
+                            <td width="398" height="51" style="font-size: 24px; color: #FFFFFF;">
+                              <strong>Últimos dias para conhecer a experiência de dirigir um Hyundai.</strong>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <!-- L2 -->
+                    <tr>
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td width="19" height="36"></td>
+                            <td width="300" height="36" style="font-size: 16px; color: #FFFFFF;">
+                              Aproveite as últimas de ofertas de Abril para conquistar o seu Hyundai 0 km.
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    
+                    <!-- L3 -->
+                    <tr>
+                      <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td height="19"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+
+                <!-- C2 -->
+                <td width="27" height="361" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="27" height="247" bgcolor="#002C5F"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXT -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="56" height="194"></td>
+                <td width="483" height="194">
+                  <p>Olá, %%firstname_%%.</p>
+                  <p>
+                    <strong>Essa é a oportunidade que você esperava para conquistar o Hyundai dos seus sonhos!</strong> São os últimos dias de condições e ofertas especiais no mês de abril para você sair de Hyundai HB20, HB20S ou CRETA 0 km. Conheça e viva a experiência única de dirigir um Hyundai, com o melhor em inovação e tecnologia:
+                  </p>
+                </td>
+                <td width="61" height="194"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>        
+
+        <!-- FEATURES IMG -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="28" height="127"></td>
+                <td width="127" height="127">
+                  <img width="127" src="./assets/feat01.png" alt="HB20 Comfort Plus MT com Central multimídia.">
+                </td>
+                <td width="12" height="127"></td>
+                <td width="127" height="127">
+                  <img width="127" src="./assets/feat02.png" alt="HB20S Platinum AT com Bluelink: seu carro conectado.">
+                </td>
+                <td width="12" height="127"></td>
+                <td width="127" height="127">
+                  <img width="127" src="./assets/feat03.png" alt="HB20S Platinum Safety AT com Câmera de ré.">
+                </td>
+                <td width="12" height="127"></td>
+                <td width="127" height="127">
+                  <img width="127" src="./assets/feat04.png" alt="CRETA Limited Safety com Detector de fadiga	">
+                </td>
+                <td width="28" height="127"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>    
+
+        <!-- FEATURES LEGENDA -->
+        <tr bgcolor="#FFFFFF">
+          <td >
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="28" height="47"></td>
+                <td width="139" height="47" style="font-size: 12px; line-height: 1.1; padding-top: 5px;" valign="top">
+                  HB20 Comfort Plus MT com Central multimídia.
+                </td>
+                <td width="127" height="47" style="font-size: 12px; line-height: 1.1;padding-top: 5px;" valign="top">
+                  HB20S Platinum AT com Bluelink: seu carro conectado.
+                </td>
+                <td width="12" height="47"></td>
+                <td width="139" height="47" style="font-size: 12px; line-height: 1.1; padding-top: 5px;" valign="top">
+                  HB20S Platinum Safety AT com Câmera de ré.
+                </td>
+                <td width="127" height="47" style="font-size: 12px; line-height: 1.1; padding-top: 5px;" valign="top">
+                  CRETA Limited Safety com Detector de fadiga
+                </td>
+                <td width="28" height="47"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>          
+
+        <!-- CARD 1 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="196" valign="top" 
+                  style="
+                    background-image: url('./assets/HB20ComfortPlusMT.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                  ">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <!-- C1 -->
+                        <td width="283" height="196" valign="top">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="283" height="52"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="219" height="46"></td>
+                                    <td width="46" height="46">
+                                      <img width="46" src="./assets/gif.gif" alt="">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <!-- C2 -->
+                        <td width="317" height="196">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="317" height="196" valign="top">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <!-- L1 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="317" height="31"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L2 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="36" height="29"></td>
+                                          <td width="281" height="29" style="font-size: 18px;">
+                                            <strong>HB20 Comfort Plus MT</strong>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L3 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="34"></td>
+                                          <td width="118" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: right;
+                                            line-height: 1.1">
+                                            De R$ 87.790 por
+                                            <span style="display: block; font-size: 24px;">
+                                              <strong>R$ 75.990</strong>
+                                            </span>
+                                          </td>
+                                          <td width="18" height="100"></td>
+                                          <td width="134" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: left;
+                                            line-height: 1.1">
+                                            Bônus de até
+                                            <span style="display: block; font-size: 24px; line-height: 1.1;">
+                                              <strong>R$ 11.800</strong>
+                                            </span>
+                                            na troca do seu usado.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L4 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="73" height="36"></td>
+                                          <td width="170" height="36" bgcolor="#007FA8">
+                                            <a href="%%=RedirectTo(@hb20ComfortPlus)=%%" style="text-decoration: none;">
+                                              <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                  <td width="170" height="36" 
+                                                  style="color: #FFFFFF; font-size: 14px; text-align: center;">
+                                                    Saiba mais
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 2 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="196" valign="top" 
+                  style="
+                    background-image: url('./assets/HB20SPlatinumAT.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                  ">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <!-- C1 -->
+                        <td width="283" height="196" valign="top">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="283" height="52"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <!-- C2 -->
+                        <td width="317" height="196">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="317" height="196" valign="top">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <!-- L1 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="317" height="31"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L2 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="36" height="29"></td>
+                                          <td width="281" height="29" style="font-size: 18px;">
+                                            <strong>HB20S Platinum AT</strong>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L3 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="152" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: right;
+                                            line-height: 1.1">
+                                            De R$ 119.290 por
+                                            <span style="display: block; font-size: 24px;">
+                                              <strong>R$ 112.790</strong>
+                                            </span>
+                                          </td>
+                                          <td width="18" height="100"></td>
+                                          <td width="134" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: left;
+                                            line-height: 1.1">
+                                            Bônus de até
+                                            <span style="display: block; font-size: 24px; line-height: 1.1;">
+                                              <strong>R$ 6.500</strong>
+                                            </span>
+                                            de valorização na <br>
+                                            troca do seu usado.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L4 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="73" height="36"></td>
+                                          <td width="170" height="36" bgcolor="#007FA8">
+                                            <a href="%%=RedirectTo(@hb20sPlatinumTGDI)=%%" style="text-decoration: none;">
+                                              <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                  <td width="170" height="36" 
+                                                  style="color: #FFFFFF; font-size: 14px; text-align: center;">
+                                                    Saiba mais
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </a>
+                                          </td>
+                                          <td width="89" height="36"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 3 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="196" valign="top" 
+                  style="
+                    background-image: url('./assets/HB20SPlatinumSafetyAT.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                  ">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <!-- C1 -->
+                        <td width="283" height="196" valign="top">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="283" height="52"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <!-- C2 -->
+                        <td width="317" height="196">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="317" height="196" valign="top">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <!-- L1 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="317" height="31"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L2 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="36" height="29"></td>
+                                          <td width="281" height="29" style="font-size: 18px;">
+                                            <strong>HB20S Platinum Safety AT</strong>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L3 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="152" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: right;
+                                            line-height: 1.1">
+                                            De R$ 121.490 por
+                                            <span style="display: block; font-size: 24px;">
+                                              <strong>R$ 114.990</strong>
+                                            </span>
+                                            com pintura preto ônix e frete incluso!
+                                          </td>
+                                          <td width="18" height="100"></td>
+                                          <td width="134" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: left;
+                                            line-height: 1.1">
+                                            Bônus de até
+                                            <span style="display: block; font-size: 24px; line-height: 1.1;">
+                                              <strong>R$ 6.500</strong>
+                                            </span>
+                                            de valorização na <br>
+                                            troca do seu usado.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L4 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="73" height="36"></td>
+                                          <td width="170" height="36" bgcolor="#007FA8">
+                                            <a href="%%=RedirectTo(@hb20sPlatinumSafety)=%%" style="text-decoration: none;">
+                                              <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                  <td width="170" height="36" 
+                                                  style="color: #FFFFFF; font-size: 14px; text-align: center;">
+                                                    Saiba mais
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </a>
+                                          </td>
+                                          <td width="89" height="36"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CARD 4 -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="196" valign="top" 
+                  style="
+                    background-image: url('./assets/CRETALimitedSafety.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    max-width: 600px;
+                    min-width: 600px;
+                  ">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <!-- C1 -->
+                        <td width="283" height="196" valign="top">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="283" height="52"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="219" height="46"></td>
+                                    <td width="46" height="46">
+                                      <img width="46" src="./assets/gif.gif" alt="">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+
+                        <!-- C2 -->
+                        <td width="317" height="196">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="317" height="196" valign="top">
+                                <table cellpadding="0" cellspacing="0" border="0">
+
+                                  <!-- L1 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="317" height="31"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L2 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="36" height="29"></td>
+                                          <td width="281" height="29" style="font-size: 18px;">
+                                            <strong>CRETA Limited Safety</strong>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L3 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="152" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: right;
+                                            line-height: 1.1">
+                                            De R$ 149.990 por
+                                            <span style="display: block; font-size: 24px;">
+                                              <strong>R$ 139.990</strong>
+                                            </span>
+                                          </td>
+                                          <td width="18" height="100"></td>
+                                          <td width="134" height="100" 
+                                            style="
+                                            font-size: 12px; 
+                                            color: #FFFFFF; 
+                                            text-align: left;
+                                            line-height: 1.1">
+                                            Bônus de até
+                                            <span style="display: block; font-size: 24px; line-height: 1.1;">
+                                              <strong>R$ 10.000</strong>
+                                            </span>
+                                            de valorização na <br>
+                                            troca do seu usado.
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <!-- L4 -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="73" height="36"></td>
+                                          <td width="170" height="36" bgcolor="#007FA8">
+                                            <a href="%%=RedirectTo(@cretaLimited)=%%" style="text-decoration: none;">
+                                              <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                  <td width="170" height="36" 
+                                                  style="color: #FFFFFF; font-size: 14px; text-align: center;">
+                                                    Saiba mais
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </a>
+                                          </td>
+                                          <td width="89" height="36"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXT -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="104" style="font-size: 17px; text-align: center;">
+                  <strong>Corra para aproveitar e conquistar o seu! <br>É por tempo limitado.</strong>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- DIVISOR -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="1"></td>
+                <td width="568" height="1" bgcolor="#676767"></td>
+                <td width="16" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SPACE -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="24"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ICONES -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="51" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/proprietarios.html?anchor=Garantia" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./assets/garantia.png" 
+                      alt="5 anos de garantia sem limite de quilometragem.">
+                  </a>  
+                </td>
+                <td width="124" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/proprietarios.html?anchor=Assistencia24hrs" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./assets/assistencia.png" 
+                      alt="Assistência 100% treinada pela própria Hyundai.">
+                    </a>
+                </td>
+                <td width="127" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/ofertas.html" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./assets/valor.png" 
+                      alt="Excelente valor residual.">
+                    </a>
+                </td>
+                <td width="96" height="40"></td>
+                <td width="40" height="40">
+                  <a 
+                    href="https://www.hyundai.com.br/concessionarias.html" 
+                    style="text-decoration: none;">
+                    <img 
+                      width="40" height="40" 
+                      src="./assets/concessionaria.png" 
+                      alt="Concessionárias próximas a você.">
+                  </a>
+                </td>
+                <td width="42" height="40"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <!-- ICONES LEGENDAS -->
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="145" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  5 anos de garantia sem <br>
+                  limite de quilometragem.
+                </td>
+                <td width="179" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Assistência 24 horas, 100% <br>
+                  treinada pela própria Hyundai.
+                </td>
+                <td width="158" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Excelente valor residual.
+                </td>
+                <td width="118" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                  Concessionárias <br>próximas a você.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- REDES SOCIAIS -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16" height="60">&nbsp;</td>
+
+                <td width="30">
+                  <img
+                    src="./assets/footer-ibama.png"
+                    width="30"
+                    alt="Logotipo Ibama."
+                    style="display: inline;"
+                  />
+                </td>
+
+                <td width="10" height="60"></td>
+
+                <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+                <td width="262" height="60" style="font-size: 12px; color: #676767;">
+                  Paz no trânsito começa por você.
+                </td>
+
+                <td
+                  width="60"
+                  height="40"
+                  style="
+                    font-family: Arial;
+                    font-size: 10px;
+                    color: #676767;
+                    font-weight: bold;
+                  "
+                >
+                  Siga-nos:
+                </td>
+
+                <td>
+                  <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                    <img
+                      style="display: block"
+                      src="./assets/footer-blog.png"
+                      width="26"
+                      height="26"
+                      alt="Blog"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.facebook.com/hyundaibr/">
+                    <img
+                      style="display: block"
+                      src="./assets/footer-facebook.png"
+                      width="26"
+                      height="26"
+                      alt="Facebook"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.youtube.com/user/hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./assets/footer-youtube.png"
+                      width="26"
+                      height="26"
+                      alt="Youtube"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.instagram.com/hyundaibr/"
+                    ><img
+                      style="display: block"
+                      src="./assets/footer-instagram.png"
+                      width="26"
+                      height="26"
+                      alt="Instagram"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                    ><img
+                      style="display: block"
+                      src="./assets/footer-linkedin.png"
+                      width="26"
+                      height="26"
+                      alt="LinkedIn"
+                  /></a>
+                </td>
+
+                <td width="10" height="60">&nbsp;</td>
+
+                <td>
+                  <a href="https://www.tiktok.com/@hyundaibr"
+                    ><img
+                      style="display: block"
+                      src="./assets/footer-tiktok.png"
+                      width="26"
+                      height="26"
+                      alt="Tiktok"
+                  /></a>
+                </td>
+
+                <td width="16" height="60">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- TEXTO LEGAL -->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16"></td>
+                <td
+                  width="568"
+                  valign="top"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #676767;
+                    text-align: justify;
+                  "
+                >
+                <strong>HB20 Comfort Plus 1.0L MT</strong><br>
+                HB20 Comfort Plus 1.0L com transmissão mecânica - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 87.790 com pintura preto ônix e frete incluso por R$ 75.990 com usado na troca com bônus de até R$ 11.800,00 na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site <a href="www.hyundai.com.br">www.hyundai.com.br</a><br><br> 
+                <strong>HB20s PlatinumTGDI 1.0L AT</strong><br>
+                HB20s PlatinumTGDI 1.0L com transmissão automática - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 119.290 com pintura preto ônix e frete incluso por R$ 112.790 com usado na troca com bônus de até R$ 6.500 na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site  <a href="www.hyundai.com.br">www.hyundai.com.br</a><br><br> 
+                <strong>HB20s Platinum Safety TGDI 1.0L AT</strong><br>
+                HB20s Platinum Safety TGDI 1.0L com transmissão automática - ano de fabricação/modelo 2024/2024 preço público sugerido à vista (válido para todo o Brasil): R$ 121.490  com pintura preto ônix e frete incluso por R$ 114.990 com usado na troca com bônus de até R$ 6.500 na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO na troca de VEÍCULOS SEMINOVOS DE QUALQUER MARCA E MODELO. Serão aceitos na troca somente os veículos SEMINOVOS acompanhados com o seu documento único de transferência (DUT) em nome do comprador do veículo ou em nome de parente de primeiro grau (pais, filhos, cônjuge), desde que comprovado o parentesco por meio de documentação oficial e original. Para mais informações, consulte as concessionárias Hyundai participantes. O veículo SEMINOVO deve ter obrigatoriamente chave reserva, manual do proprietário, certificado de garantia com as revisões realizadas de acordo com a recomendação do fabricante. Para que seja aplicável a presente promoção, o veículo SEMINOVO deve apresentar perfeitas condições de uso e pleno funcionamento de todos os equipamentos/acessórios, ou seja, sem a necessidade de reparo e troca de peças. Acessórios e equipamentos instalados no veículo SEMINOVO pelo proprietário não serão considerados como acréscimo ao valor a ser pago. Não participam desta promoção as vendas efetuadas para lojistas e frotistas (Vendas Diretas HMB). Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 01/04/2024 a 30/04/2024 enquanto durarem os estoques. Condições não cumulativas com ofertas de cash bônus ou taxas especiais de financiamento. Imagens meramente ilustrativas. Consulte coberturas no site   <a href="www.hyundai.com.br">www.hyundai.com.br</a><br><br> 
+                <strong>CRETA Limited Safety</strong><br>
+                CRETA Limited Safety 1.0 L TGDI com transmissão automática 2024/2024 e preço público sugerido à vista (válido para todo o Brasil): de R$ 149.990,00 por R$ 139.990,00 com pintura preto sólido e frete incluso. Condição válida no período de 1/3/2024 a 30/4/2024 enquanto durarem os estoques. Imagens meramente ilustrativas.
+                <br><br> 
+                </td>
+                <td width="16"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BUSINESS INFORMATION & OPT OUT-->
+        <tr bgcolor="#FFFFFF">
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="16">&nbsp;</td>
+                <td
+                  width="568"
+                  height="60"
+                  style="
+                    font-family: Arial;
+                    font-size: 9px;
+                    color: #676767;
+                    text-align: center;
+                  "
+                >
+                  <br>
+                  Se você não deseja mais receber e-mails como este,
+                  <a href="%%subscription_center_url%%">clique aqui</a>.
+                  <br><br>
+                  Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                  13413-900 - Piracicaba-SP
+                  <br><br>
+                  Esta é uma mensagem automática. Por favor, não responda este
+                  e-mail. Caso deseje,
+                  <a href="%%profile_center_url%%">fale conosco.</a>.
+                  <br><br>
+                  This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                  <br><br><br>
+                </td>
+                <td width="16">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>

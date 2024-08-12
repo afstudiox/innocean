@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyundai</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="600"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="600" height="200" font-size="24px">
+                  <!-- Seu script aqui -->
+                  <script>
+                    // Defina a data final para a contagem regressiva
+                    var countdownDate = new Date("April 10, 2024 12:00:00").getTime();
+
+                    // Atualize o contador a cada segundo
+                    var countdownInterval = setInterval(function() {
+                      // Obtenha a data e hora atual
+                      var now = new Date().getTime();
+
+                      // Calcule a diferença entre a data final e a data atual
+                      var distance = countdownDate - now;
+
+                      // Calcule dias, horas, minutos e segundos restantes
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                      // Exiba o resultado
+                      document.write(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+
+                      // Se a contagem regressiva terminar, exiba uma mensagem
+                      if (distance < 0) {
+                        clearInterval(countdownInterval);
+                        document.write("EXPIRADO");
+                      }
+                    }, 1000);
+                  </script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
