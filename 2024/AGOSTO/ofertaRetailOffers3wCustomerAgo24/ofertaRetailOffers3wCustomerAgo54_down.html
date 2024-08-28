@@ -1,0 +1,1322 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @cretalimited = Concat('
+https://hyundai.com.br/solicitar-um-click.html?account-id='
+, @external_id, '&offer-id=463')
+
+set @hb20limited = Concat('
+https://hyundai.com.br/solicitar-um-click.html?account-id='
+, @external_id, '&offer-id=464')
+
+set @hb20splatinum = Concat('
+https://hyundai.com.br/solicitar-um-click.html?account-id='
+, @external_id, '&offer-id=465')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Hyundai</title>
+</head>
+
+<style>
+  /* Compatible Old Versions */
+  * {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+  
+  /* reset css */
+  body, tr, td, p, img, a, div, hr, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+  }
+</style>
+
+<body>
+  <table width="600" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0">
+    <tbody>
+
+      <!-- HEADER -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="122">
+                <a 
+                  href="https://www.hyundai.com.br/" 
+                  style="text-decoration: none;">
+                  <img width="600" alt="Hyundai" style="display: block;"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/114131a5-8504-4c13-927f-b839e4bd7738.png" >
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- MKV -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600">
+                  <img 
+                  width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/7067254f-1e51-4eb5-a8ee-54cc4cd0625b.png" 
+                  alt="Os carros mais desejados do país te levam para a final da CONMEBOL Libertadores. Aproveite bônus de até R$ 10.000!" 
+                  style="display: block;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="56"></td>
+              <td width="489" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
+                <p>Olá, %%firstname_%%.</p>
+                <br>
+                <p>
+                  <strong>Chegou a sua hora de trocar de carro e ainda concorrer a um pacote completo,</strong> com acompanhante, para a final da CONMEBOL Libertadores na Argentina! <strong>É a promoção Fan-Test Hyundai.</strong>
+                </p>
+                <br>
+                <p>
+                  <strong>Aproveite bônus imperdíveis de até R$ 10.000</strong> para garantir o seu próximo Hyundai 0 km e participar, além de continuar aproveitando o melhor da inovação e tecnologia que você já conhece, agora em um novo 0 km:
+                </p>
+              </td>
+              <td width="55"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="32"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 TAG -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="58" height="73"></td>
+              <td width="153" height="73" bgcolor="#002C5F">
+                <img width="153" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/1debf05b-a0e0-4c17-93b5-5b5d22bb2f1e.png" alt="CRETA Limited Safety" style="display: block;">
+              </td>
+              <td width="299" height="73" bgcolor="#F6F3F2"></td>
+              <td width="90" height="73"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 IMAGE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2">
+                <img width="420" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ad8d3dc7-0087-4b3a-99bf-21357fc90a1c.png" alt="CRETA Limited Safety" style="display: block;">
+              </td>
+               <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 PRICE & CONDITIONS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="63" height="20" bgcolor="#F6F3F2"></td>
+              <td width="137" height="20" bgcolor="#F6F3F2">
+                Bônus de
+                <br>
+                <span style="font-size: 22px;"><strong>R$ 10.000</strong></span>
+              </td>
+              <td width="1" height="20" bgcolor="#676767"></td>
+              <td width="16" height="20" bgcolor="#F6F3F2"></td>
+              <td width="161" height="20" bgcolor="#F6F3F2">
+                De <span style="text-decoration: line-through;">R$ 156.490</span> por
+                <br>
+                <span style="font-size: 26px;"><strong>R$ 146.490.</strong></span>
+              </td>
+              <td width="43" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="125" height="1" bgcolor="#676767"></td>
+              <td width="251" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="333" height="1" bgcolor="#676767"></td>
+              <td width="43" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 FEATURES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/1ccd5948-4584-45e4-9f31-f547fa709f52.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Smart Key com botão de partida do motor
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c114079e-cc57-4dbb-9e6d-b9cfc35eb7b5.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Central multimídia blueMedia de 8”, <br>com conexão sem fio
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/050a9e66-fad0-4fa8-8732-4f349a115a47.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Sistema de segurança com 6 airbags
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="20"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 1 CTA -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="40"></td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="161" height="40" bgcolor="#002C5F">
+                <a href="%%=RedirectTo(@cretalimited)=%%" style="text-decoration: none;">
+                  <img width="161" height="40" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ae7e6b8b-3477-4c8c-b783-0bd47ad4a271.png" alt="Compre Já" style="display: block;">
+                </a>
+              </td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="90" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="42"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- CARD 2 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 TAG -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="58" height="73"></td>
+              <td width="153" height="73" bgcolor="#002C5F">
+                <img width="153" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/cf21e46a-6c2f-444e-ac02-46744b71d98b.png" alt="HB20 Limited Plus" style="display: block;">
+              </td>
+              <td width="299" height="73" bgcolor="#F6F3F2"></td>
+              <td width="90" height="73"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 IMAGE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2">
+                <img width="420" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/b02a586c-15f7-4b38-9443-ac4d91f897ac.png" alt="HB20 Limited Plus" style="display: block;">
+              </td>
+               <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 PRICE & CONDITIONS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="63" height="20" bgcolor="#F6F3F2"></td>
+              <td width="137" height="20" bgcolor="#F6F3F2">
+                Bônus de
+                <br>
+                <span style="font-size: 22px;"><strong>R$ 6.000</strong></span>
+              </td>
+              <td width="1" height="20" bgcolor="#676767"></td>
+              <td width="16" height="20" bgcolor="#F6F3F2"></td>
+              <td width="161" height="20" bgcolor="#F6F3F2">
+                De <span style="text-decoration: line-through;">R$ 96.390</span> por
+                <br>
+                <span style="font-size: 26px;"><strong>R$ 90.390.</strong></span>
+                <br>
+                à vista.
+              </td>
+              <td width="43" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="125" height="1" bgcolor="#676767"></td>
+              <td width="251" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="333" height="1" bgcolor="#676767"></td>
+              <td width="43" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 FEATURES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/4c41f87e-4fbc-41f0-8cb3-a18dc293ea29.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Assistente de partida em rampa
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ead8e20a-b36c-4b56-af31-d7b581897628.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Acendimento automático dos faróis
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c114079e-cc57-4dbb-9e6d-b9cfc35eb7b5.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Central multimídia blueMedia de 8”, <br>com conexão sem fio
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="20"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 2 CTA -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="40"></td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="161" height="40" bgcolor="#002C5F">
+                <a href="%%=RedirectTo(@hb20limited)=%%" style="text-decoration: none;">
+                  <img width="161" height="40" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ae7e6b8b-3477-4c8c-b783-0bd47ad4a271.png" alt="Compre Já" style="display: block;">
+                </a>
+              </td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="90" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+ 
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="42"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CARD 3 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 TAG -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="58" height="73"></td>
+              <td width="153" height="73" bgcolor="#002C5F">
+                <img width="153" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/5097bda4-2116-4e19-8a81-016199cabd07.png" alt="HB20S Platinum" style="display: block;">
+              </td>
+              <td width="299" height="73" bgcolor="#F6F3F2"></td>
+              <td width="90" height="73"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 IMAGE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2">
+                <img width="420" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/cd63ba3e-500b-468f-9420-67b296cb9924.png" alt="HB20S Platinum" style="display: block;">
+              </td>
+                <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 PRICE & CONDITIONS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="63" height="20" bgcolor="#F6F3F2"></td>
+              <td width="137" height="20" bgcolor="#F6F3F2">
+                Bônus de
+                <br>
+                <span style="font-size: 22px;"><strong>R$ 7.500</strong></span>
+              </td>
+              <td width="1" height="20" bgcolor="#676767"></td>
+              <td width="16" height="20" bgcolor="#F6F3F2"></td>
+              <td width="161" height="20" bgcolor="#F6F3F2">
+                De <span style="text-decoration: line-through;">R$ 119.290</span> por
+                <br>
+                <span style="font-size: 26px;"><strong>R$ 111.790</strong></span>
+                <br>
+                à vista.
+              </td>
+              <td width="43" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="125" height="1" bgcolor="#676767"></td>
+              <td width="251" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="1"></td>
+              <td width="44" height="1" bgcolor="#F6F3F2"></td>
+              <td width="333" height="1" bgcolor="#676767"></td>
+              <td width="43" height="1" bgcolor="#F6F3F2"></td>
+              <td width="90" height="1"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="20"></td>
+              <td width="420" height="20" bgcolor="#F6F3F2"></td>
+              <td width="90" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 FEATURES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/56b6a710-9d96-4377-9eb6-5d38d49cbb76.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Bancos de couro na cor cinza
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/20a44dd0-c05a-47be-8acb-c8cc415de15d.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Bluelink: sistema de carro conectado
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="12"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="44" bgcolor="#F6F3F2"></td>
+              <td width="35" bgcolor="#F6F3F2">
+                <img width="35" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c114079e-cc57-4dbb-9e6d-b9cfc35eb7b5.png" alt="" style="display: block;">
+              </td>
+              <td width="12" bgcolor="#F6F3F2"></td>
+              <td width="286" bgcolor="#F6F3F2" style="font-size: 14px;">
+                Central multimídia blueMedia de 8”, <br>com conexão sem fio
+              </td>
+              <td width="43" bgcolor="#F6F3F2"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90"></td>
+              <td width="420" bgcolor="#F6F3F2" height="20"></td>
+              <td width="90"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- CARD 3 CTA -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="90" height="40"></td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="161" height="40" bgcolor="#002C5F">
+                <a href="%%=RedirectTo(@hb20splatinum)=%%" style="text-decoration: none;">
+                  <img width="161" height="40" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ae7e6b8b-3477-4c8c-b783-0bd47ad4a271.png" alt="Compre Já" style="display: block;">
+                </a>
+              </td>
+              <td width="130" bgcolor="#F6F3F2" height="40">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                  <tr>
+                    <td width="130" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td width="130" height="18" bgcolor="#FFFFFF"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="90" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="42"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="84"></td>
+              <td width="433">
+                Não perca essa oportunidade de trocar de carro e concorrer a prêmios incríveis!
+              </td>
+              <td width="83"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>        
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="25"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXT -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="140"></td>
+              <td width="321" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.1; color: #000000; text-align: center;">
+                <strong>Acesse o site e fique por dentro de todas as informações da promoção:</strong>
+              </td>
+              <td width="139"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>        
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="22"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SAIBA MAIS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="243" height="22"></td>
+              <td width="114" height="22">
+                <a href="https://fantesthyundai.com.br/" style="text-decoration: none;">
+                  <img width="114" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ced3cb5b-7554-49e7-bfbc-e0108da88078.png" alt="Saiba mais" style="display: block;">
+                </a>
+              </td>
+              <td width="243" height="22"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="20"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- DIVISOR -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td width="568" 
+                style="border-top: 1px solid #676767; height: 0; line-height: 0;">
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="24"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ICONES -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="51" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Garantia" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/9246a410-1ee9-44bc-983d-7dc413082aa3.png" 
+                    alt="5 anos de garantia sem limite de quilometragem.">
+                </a>  
+              </td>
+              <td width="124" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/proprietarios.html?anchor=Assistencia24hrs" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/1102c71c-bbe8-4722-8c0b-968d1cdec79b.png" 
+                    alt="Assistência 100% treinada pela própria Hyundai.">
+                  </a>
+              </td>
+              <td width="127" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/financiamentos.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/f1c88ece-db00-4bb5-a898-5d9f7bb40a68.png" 
+                    alt="Opções de financiamento ideais para você.">
+                  </a>
+              </td>
+              <td width="96" height="40"></td>
+              <td width="40" height="40">
+                <a 
+                  href="https://www.hyundai.com.br/concessionarias.html" 
+                  style="text-decoration: none;">
+                  <img 
+                    width="40" height="40" 
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fc6f5cd1-44cd-4be8-950a-8dc4554773eb.png" 
+                    alt="Concessionárias próximas a você.">
+                </a>
+              </td>
+              <td width="42" height="40"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- ICONES LEGENDAS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="145" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                5 anos de garantia sem <br>
+                limite de quilometragem.
+              </td>
+              <td width="179" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Assistência 24 horas, 100%<br>
+                treinada pela própria Hyundai.
+              </td>
+              <td width="158" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Opções de financiamento <br>
+                ideais para você.
+              </td>
+              <td width="118" height="54" style="font-size: 10px; color: #676767; text-align: center;">
+                Concessionárias <br>próximas a você.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- MKV -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td width="568">
+                <a href="http://www.fantesthyundai.com.br" style="text-decoration: none;">
+                  <img 
+                  width="568" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/8c98a05e-14b9-4ab6-998f-a32abfb001f6.png" 
+                  alt="Promoção Fan-Test Hyundai - Você com seu Hyundai na Final da CONMEBOL Libertadores. Saiba mais" 
+                  style="display: block;">
+                </a>
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- REDES SOCIAIS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16" height="60">&nbsp;</td>
+
+              <td width="30">
+                <img
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/776445fd-d4a3-4b29-8fce-4906f0474fc2.png
+                  "
+                  width="30"
+                  alt="Logotipo Ibama."
+                  style="display: inline;"
+                />
+              </td>
+
+              <td width="10" height="60"></td>
+
+              <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+              <td width="262" height="60" style="font-size: 12px; color: #676767;">
+                Paz no trânsito começa por você.
+              </td>
+
+              <td
+                width="60"
+                height="40"
+                style="
+                  font-family: Arial;
+                  font-size: 10px;
+                  color: #676767;
+                  font-weight: bold;
+                "
+              >
+                Siga-nos:
+              </td>
+
+              <td>
+                <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d74634bc-1375-47d3-973a-63b23c088549.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Blog"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.facebook.com/hyundaibr/">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/59fad6d6-2fd8-4a66-9c8f-27d75a92c2df.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Facebook"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.youtube.com/user/hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb7a922c-bbbf-456d-93d8-3e173b0f5919.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Youtube"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.instagram.com/hyundaibr/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fec28cbd-4579-4348-bc6c-b635f20e496c.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Instagram"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ba9868d2-ff0d-40ee-936e-bfe36c96dafa.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="LinkedIn"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.tiktok.com/@hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a6146d22-275d-4e7e-90cc-2c583bcb5866.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Tiktok"
+                /></a>
+              </td>
+
+              <td width="16" height="60">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TEXTO LEGAL -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16"></td>
+              <td
+                width="568"
+                valign="top"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: justify;
+                "
+              >
+              <br>
+              <strong>
+                CRETA Limited Safety 1.0L TGDI com transmissão automática 2024/2025
+              </strong>
+              <br>
+                CRETA Limitedy Safety 1.0L TGDI com transmissão automática 2024/2025 preço público sugerido à vista (válido para todo o Brasil): de R$ 156.490 por R$ 146.490 à vista com pintura preto ônix e frete incluso. Ou CRETA Limited Safety 1.0L TGDI com transmissão automática 2024/2025 preço público sugerido à vista (válido para todo o Brasil): R$ 156.490,00 com pintura preto ônix e frete incluso. Entrada de R$ 46.947,00 (30%), saldo em 48 parcelas mensais no valor de R$ 3.030,81. Preço total do veículo com os encargos é de R$ 192.426,11. Taxa de juros para o financiamento simulado é de 0,99% a.m. e 12,55% (CET: 1,22% a.m. e 15,71% a.a.). Até 30 dias de carência a contar da data de emissão da Cédula de Crédito Bancário. O valor das parcelas inclui IOF, Tarifa de Cadastro, custos de registro do contrato e CDC Protegido Vida Hyundai (1). Os custos de registro de contrato baseiam-se no valor aplicado para São Paulo e poderão variar de acordo com o DETRAN de cada Estado ou autoridade estadual competente para a realização do registro e estarão incluídos no CET – Custo Efetivo Total, que será informado ao cliente antes da contratação. O CET – Custo Efetivo Total irá variar de acordo com os valores, prazos e demais condições escolhidas pelo cliente e será informado ao cliente antes da contratação. Não estão incluídos os preços de acessórios, documentação, manutenção ou qualquer outro produto ou serviço ofertado pelo Concessionário. Condições sujeitas a análise e aprovação de crédito e demais condições do produto vigentes na data da contratação. Promoção válida no período de 06/08/2024 a 31/08/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. (1) CDC Protegido Vida Hyundai é um produto opcional, garantido por Zurich Santander Brasil Seguros e Previdência S.A., (atual denominação social da Santander Seguros S.A.), CNPJ 87.376.109/0001-06, Reg. SUSEP 0507-0, Processo SUSEP nº 15414.901626/2017-05. O registro deste plano na SUSEP não implica, por parte dessa autarquia, incentivo ou recomendação a sua comercialização. A aceitação do seguro estará sujeita à análise do risco. O Segurado poderá consultar a situação cadastral de sua corretora de seguros Hyundai Corretora de Seguros Ltda., no site www.susep.gov.br, por meio do número de registro na SUSEP nº. 10.2054751.0, nome completo e CNPJ nº34.279.765/0001-24. Consulte coberturas no site www.hyundai.com.br. As ofertas de bônus ou taxa não são cumulativas.
+              <br><br>
+              <strong>
+                HB20 Limited Plus 1.0L com transmissão manual 2024/2025
+              </strong>
+              <br>
+                HB20 Limited Plus 1.0L com transmissão manual 2024/2025 preço público sugerido à vista (válido para todo o Brasil): de R$ 96.390 por R$ 90.390 à vista com pintura preto ônix e frete incluso. Promoção válida no período de 01/08/2024 a 01/09/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas.
+              <br><br>
+              <strong>
+                HB20S Platinum 1.0L TGDI com transmissão automática - 2024/2025
+              </strong>
+              <br>
+                HB20S Platinum 1.0L TGDI com transmissão automática - ano de fabricação/modelo 2024/2025 preço público sugerido à vista (válido para todo o Brasil): de R$ 119.290 por R$ 111.790 com pintura preto ônix e frete incluso. Promoção válida no período de 01/08/2024 a 01/09/2024 ou enquanto durarem os estoques. Imagens meramente ilustrativas. 
+              <br><br>
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BUSINESS INFORMATION & OPT OUT-->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="16">&nbsp;</td>
+              <td
+                width="568"
+                height="60"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: center;
+                "
+              >
+                <br>
+                Se você não deseja mais receber e-mails como este,
+                <a href="%%subscription_center_url%%">clique aqui</a>.
+                <br><br>
+                Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                13413-900 - Piracicaba-SP
+                <br><br>
+                Esta é uma mensagem automática. Por favor, não responda este
+                e-mail. Caso deseje,
+                <a href="%%profile_center_url%%">fale conosco.</a>.
+                <br><br>
+                This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                <br><br><br>
+              </td>
+              <td width="16">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
