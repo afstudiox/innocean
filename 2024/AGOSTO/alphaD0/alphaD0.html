@@ -1,3 +1,19 @@
+%%[
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @link = Concat('
+https://www.hyundai.com.br/ocknurturing.html?account-id='
+, @external_id, '&utm_source=EMAIL_CRM&utm_medium=EMAIL&utm_content=EMAIL_GENE_NURTURING_ALPHA_OCK_MSAD&utm_campaign=09_24_email_general_alpha_newsletterpage_nurturing')
+
+]%%
+
 <custom name="opencounter" type="tracking"/>
 <!DOCTYPE html>
 <html lang="en">
@@ -216,7 +232,7 @@
                     <td width="20" height="32"></td>
                     <td width="135" height="32">
                      <a 
-                        href="https://hyundai.com.br/ocknurturing" 
+                        href="%%=RedirectTo(@link)=%%" 
                         style="text-decoration: none;">
                         <img 
                           width="135" 
