@@ -1,0 +1,425 @@
+%%[ set @fullName = AttributeValue("FirstName") if indexOf(@fullName, " ") > 0 then set @firstName = Substring(@fullName,1, Subtract(IndexOf(@fullName," "),1)) elseif indexOf(@fullName, ";") > 0 then set @firstName = Substring(@fullName, Add(IndexOf(@fullName, ";"), 2), Length(@fullName)) else set @firstName = AttributeValue("FirstName") endif ]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Hyundai</title>
+</head>
+
+<style>
+  /* Compatible Old Versions */
+  * {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+  
+  /* reset css */
+  body, tr, td, p, img, a, div, hr, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+  }
+</style>
+
+<body>
+  <table width="600" cellspacing="0" cellpadding="0" role="presentation" align="center" border="0">
+    <tbody>
+
+    <!-- HELPER -->
+    <tr bgcolor="#FFFFFF">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="600" height="30" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;">
+              Caso não consiga visualizar este e-mail,<a href="%%view_email_url%%" style="text-decoration: none;"> clique aqui.</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- HEADER -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="600" height="122">
+              <a 
+                href="https://www.hyundai.com.br/" 
+                style="text-decoration: none;">
+                <img width="600" alt="Hyundai" style="display: block;"
+                src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/2cd9e4bc-943f-4ed4-bcda-7b091413f64a.png" >
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- MKV -->
+    <tr bgcolor="#F6F3F2">
+    <td>
+      <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+        <tr>
+          <td width="42" height="364"></td>
+          <td width="516" height="364" bgcolor="#FFFFFF">
+            <img width="516" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/3d8fef67-3eb4-4f28-88a5-6c57a4a02726.png" alt="Você já encontrou o seu próximo carro? A Hyundai quer saber sua opnião." style="display: block;">
+          </td>
+          <td width="42" height="364"></td>
+        </tr>
+      </table>
+    </td>
+    </tr>
+
+    <!-- SPACE -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="30"></td>
+            <td width="516" height="30" bgcolor="#FFFFFF"></td>
+            <td width="42" height="30"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- TEXT -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="30"></td>
+            <td width="51" height="30" bgcolor="#FFFFFF"></td>
+            <td width="414" height="30" bgcolor="#FFFFFF" style="font-size: 18px;">
+              Olá, %%=ProperCase(@FirstName)=%%.
+              <br><br>
+              Ficamos muito felizes em saber que, recentemente, você demonstrou interesse em um Hyundai.
+              <br><br>
+              Sabemos que a decisão de comprar um carro novo é muito importante, por isso queremos saber sua opinião.
+              <br><br>
+              Preparamos uma rápida pesquisa, que você pode completar em poucos minutos. Para começar, é só responder à pergunta abaixo:
+            </td>
+            <td width="51" height="30" bgcolor="#FFFFFF"></td>
+            <td width="42" height="30"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SPACE -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="30"></td>
+            <td width="516" height="30" bgcolor="#FFFFFF"></td>
+            <td width="42" height="30"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- BOX CTA -->
+    <tr bgcolor="#FFFFFF">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="135" bgcolor="#F6F3F2"></td>
+            <td width="51" height="135"></td>
+            <td width="414" height="135" valign="top" bgcolor="#F6F3F2" style="border-radius: 8px;">
+
+              <!-- SPACE -->
+              <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                <tr><td width="414" height="30"></td></tr>
+              </table>
+
+              <!-- TITLE -->
+              <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                <tr>
+                  <td width="414" style="font-size: 18px; text-align: center;">
+                    <strong>Você já comprou o seu carro?</strong>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- SPACE -->
+              <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                <tr><td width="414" height="26"></td></tr>
+              </table>
+
+              <!-- CTA -->
+              <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                <tr>
+                  <td width="99" height="27"></td>
+                  <td width="79" height="27">
+                    <a href="LINK-HERE" style="text-decoration: none;">
+                      <img width="79" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c1186ba3-4b76-4248-97cb-fa80646d8558.png" alt="Sim" style="display: block;">
+                    </a>
+                  </td>
+                  <td width="59" height="27"></td>
+                  <td width="79" height="27">
+                    <a href="LINK-HERE" style="text-decoration: none;">
+                      <img width="79" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/0e4055e2-7d27-4ec1-bb79-127253a03231.png" alt="Não" style="display: block;">
+                    </a>
+                  </td>
+                  <td width="98" height="27"></td>
+                </tr>
+              </table>
+
+              <!-- SPACE -->
+              <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+                <tr><td width="414" height="31"></td></tr>
+              </table>
+
+            </td>
+            <td width="51" height="135"></td>
+            <td width="42" height="135" bgcolor="#F6F3F2"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SPACE -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="30"></td>
+            <td width="516" height="30" bgcolor="#FFFFFF"></td>
+            <td width="42" height="30"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- TEXT -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="30"></td>
+            <td width="51" height="30" bgcolor="#FFFFFF"></td>
+            <td width="414" height="30" bgcolor="#FFFFFF" style="font-size: 18px; text-align: center;">
+              Com base na sua resposta, saberemos como podemos te ajudar.
+              <br><br>
+              Obrigado pelo seu tempo!
+              <br><br>
+              <strong>Até logo.</strong>
+            </td>
+            <td width="51" height="30" bgcolor="#FFFFFF"></td>
+            <td width="42" height="30"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SPACE -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="42" height="16"></td>
+            <td width="516" height="16" bgcolor="#FFFFFF"></td>
+            <td width="42" height="16"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- REDES SOCIAIS -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="16" height="60">&nbsp;</td>
+
+            <td width="30">
+              <img
+                src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/776445fd-d4a3-4b29-8fce-4906f0474fc2.png
+                "
+                width="30"
+                alt="Logotipo Ibama."
+                style="display: inline;"
+              />
+            </td>
+
+            <td width="10" height="60"></td>
+
+            <!-- ALTERAR ESSE ESPAÇCAMENTO QUANDO NECESSÁRIO -->
+            <td width="262" height="60" style="font-size: 12px; color: #676767;">
+              Paz no trânsito começa por você.
+            </td>
+
+            <td
+              width="60"
+              height="40"
+              style="
+                font-family: Arial;
+                font-size: 10px;
+                color: #676767;
+                font-weight: bold;
+              "
+            >
+              Siga-nos:
+            </td>
+
+            <td>
+              <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                <img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d74634bc-1375-47d3-973a-63b23c088549.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="Blog"
+              /></a>
+            </td>
+
+            <td width="10" height="60">&nbsp;</td>
+
+            <td>
+              <a href="https://www.facebook.com/hyundaibr/">
+                <img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/59fad6d6-2fd8-4a66-9c8f-27d75a92c2df.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="Facebook"
+              /></a>
+            </td>
+
+            <td width="10" height="60">&nbsp;</td>
+
+            <td>
+              <a href="https://www.youtube.com/user/hyundaibr"
+                ><img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb7a922c-bbbf-456d-93d8-3e173b0f5919.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="Youtube"
+              /></a>
+            </td>
+
+            <td width="10" height="60">&nbsp;</td>
+
+            <td>
+              <a href="https://www.instagram.com/hyundaibr/"
+                ><img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fec28cbd-4579-4348-bc6c-b635f20e496c.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="Instagram"
+              /></a>
+            </td>
+
+            <td width="10" height="60">&nbsp;</td>
+
+            <td>
+              <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                ><img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ba9868d2-ff0d-40ee-936e-bfe36c96dafa.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="LinkedIn"
+              /></a>
+            </td>
+
+            <td width="10" height="60">&nbsp;</td>
+
+            <td>
+              <a href="https://www.tiktok.com/@hyundaibr"
+                ><img
+                  style="display: block"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a6146d22-275d-4e7e-90cc-2c583bcb5866.png
+                  "
+                  width="26"
+                  height="26"
+                  alt="Tiktok"
+              /></a>
+            </td>
+
+            <td width="16" height="60">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- TEXTO LEGAL -->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="16"></td>
+            <td
+              width="568"
+              valign="top"
+              style="
+                font-family: Arial;
+                font-size: 9px;
+                color: #000000;
+                text-align: justify;
+              "
+            >
+            Para dúvidas, confira a nossa política de privacidade em www.hyundai.com.br/privacidade. O Hyundai HB20 e Creta estão em conformidade com o Programa de Controle de Poluição do Ar por Veículos Automotores - PROCONVE. Segurança no trânsito. Preserve a vida. Use o cinto de segurança. Na cidade somos todos pedestres. Pedestre, você também faz parte do trânsito. Todos juntos fazem um trânsito melhor. Avance no respeito. Não avance na faixa. Pedestre, dê o sinal para sua vida. Pedestre, use sua faixa. Informações Adicionais. As imagens dos veículos e de seus itens são meramente ilustrativas. As informações e ilustrações se baseiam nos dados disponíveis no momento da publicação e estão sujeitas a alteração sem aviso prévio. As condições podem ser alteradas a qualquer momento sem aviso prévio. Para mais informações ligue para o Call Center Hyundai Motor Brasil: 0800 770 3355. Hyundai Motor Brasil – HMB – Todos os direitos reservados – 2024.
+            </td>
+            <td width="16"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- BUSINESS INFORMATION & OPT OUT-->
+    <tr bgcolor="#F6F3F2">
+      <td>
+        <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+          <tr>
+            <td width="16">&nbsp;</td>
+            <td
+              width="568"
+              height="60"
+              style="
+                font-family: Arial;
+                font-size: 9px;
+                color: #000000;
+                text-align: center;
+              "
+            >
+              <br>
+              Se você não deseja mais receber e-mails como este,
+              <a href="%%subscription_center_url%%">clique aqui</a>.
+              <br><br>
+              Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+              13413-900 - Piracicaba-SP
+              <br><br>
+              Esta é uma mensagem automática. Por favor, não responda este
+              e-mail. Caso deseje,
+              <a href="%%profile_center_url%%">fale conosco.</a>.
+              <br><br>
+              This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+              <br><br><br>
+            </td>
+            <td width="16">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</body>
+
+</html>

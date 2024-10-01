@@ -1,3 +1,5 @@
+%%[ set @fullName = AttributeValue("FirstName") if indexOf(@fullName, " ") > 0 then set @firstName = Substring(@fullName,1, Subtract(IndexOf(@fullName," "),1)) elseif indexOf(@fullName, ";") > 0 then set @firstName = Substring(@fullName, Add(IndexOf(@fullName, ";"), 2), Length(@fullName)) else set @firstName = AttributeValue("FirstName") endif ]%%
+
 <custom name="opencounter" type="tracking"/>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -39,7 +41,7 @@
                   href="https://www.hyundai.com.br/" 
                   style="text-decoration: none;">
                   <img width="600" alt="Hyundai" style="display: block;"
-                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/aaf9fa09-5003-40d4-a26f-2a5835d7296c.png" >
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ce2b6e68-2748-479d-90b5-0cb17b71d49b.png" >
                 </a>
               </td>
             </tr>
@@ -54,8 +56,8 @@
             <tr>
               <td width="600">
                   <img 
-                  width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/381559c7-e7ca-4d86-815d-5a8fd8547276.png" 
-                  alt="5 anos de garantia Hyundai, sem limite de quilometragem.Entenda o compromisso que temos com a sua segurança, e como preservar a garantia do seu Hyundai." 
+                  width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/49ea9ce2-7a56-4890-9cfd-0787035c72d1.png" 
+                  alt="Assistência 24h Hyundai. Fazendo o melhor por você, sempre." 
                   style="display: block;">
               </td>
             </tr>
@@ -81,15 +83,181 @@
             <tr>
               <td width="63"></td>
               <td width="474" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
-                <p>Olá, %%firstname_%%.</p>
-                <br>
-                <strong>Você e o seu Hyundai merecem o melhor cuidado, e é por isso que oferecemos 5 anos de garantia sem limite de quilometragem</strong> para o seu veículo. Esse é o nosso compromisso com o seu bem-estar e segurança.
+                Olá, %%=ProperCase(@FirstName)=%%.
+                <br><br>
+                <strong>Seja qual for a situação, você pode contar com a Hyundai.</strong> Com uma cobertura abrangente, a Assistência 24h está disponível para garantir a sua tranquilidade e segurança, onde quer que você esteja.
+                <br><br>
+                Disponibilizamos um serviço gratuito de assistência 24h em caso de pane ou acidente para os todos os veículos da família HB20 e CRETA. <strong>Nossa cobertura é nacional e também se estende aos países do Mercosul (Argentina, Paraguai e Uruguai)</strong> durante os primeiros 12 meses após a aquisição do veículo.
+                <br><br>
+                <strong>Oferecemos suporte em diversas situações, incluindo:</strong>
               </td>
               <td width="63"></td>
             </tr>
           </table>
         </td>
       </tr>   
+
+      <!-- SPACE -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
+            <tr>
+              <td width="600" height="33"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- BOX SERVIÇOS -->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="33"></td>
+              <td width="474" height="33" bgcolor="F6F3F2"></td>
+              <td width="63" height="33"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/0fd76004-5d1a-4476-8d17-1a1af72bbf0f.png" alt="Ícone de um carro com uma chave de boca" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Socorro mecânico:</strong><br>
+                Para pane por falta de carga na bateria;
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="14"></td>
+              <td width="474" height="14" bgcolor="F6F3F2"></td>
+              <td width="63" height="14"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/46158855-184d-414c-b78d-fbc93ddbfa31.png" alt="Ícone de um reboque" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Reboque para pane e acidente: </strong><br>
+                Quando o reparo não é possível no local;
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="14"></td>
+              <td width="474" height="14" bgcolor="F6F3F2"></td>
+              <td width="63" height="14"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/247b4f36-ea9e-4632-ba80-8188aa36e977.png" alt="Ícone de um pneu" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Troca de pneu:  </strong><br>
+                Substituição do pneu avariado;
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="14"></td>
+              <td width="474" height="14" bgcolor="F6F3F2"></td>
+              <td width="63" height="14"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a48fa793-880c-42e1-9d37-6d4019dc4015.png" alt="Ícone de um marcador de combustível" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Pane seca: </strong><br>
+                Caso o veículo fique sem combustível;
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="14"></td>
+              <td width="474" height="14" bgcolor="F6F3F2"></td>
+              <td width="63" height="14"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/5c8c470a-6f6e-41a5-8539-d61d338e984c.png" alt="Ícone de um carro" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Carro reserva: </strong><br>
+                Disponível em determinadas situações de pane;
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="14"></td>
+              <td width="474" height="14" bgcolor="F6F3F2"></td>
+              <td width="63" height="14"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="34"></td>
+              <td width="45" height="34" bgcolor="F6F3F2"></td>
+              <td width="34" height="34" bgcolor="F6F3F2">
+                <img width="34" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/72d11adc-829d-46e6-9046-bd39ddda2adc.png" alt="Ícone de um chaveiro" style="display: block;">
+              </td>
+              <td width="24" height="34" bgcolor="F6F3F2">
+              <td width="371" height="34" bgcolor="F6F3F2" style="font-size: 14px;">
+                <strong>Carro reserva: </strong><br>
+                Em caso de perda ou quebra da chave do veículo.
+              </td>
+              </td>
+              <td width="63" height="34"></td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+            <tr>
+              <td width="63" height="33"></td>
+              <td width="474" height="33" bgcolor="F6F3F2"></td>
+              <td width="63" height="33"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
       <!-- SPACE -->
       <tr>
@@ -97,61 +265,6 @@
           <table cellspacing="0" cellpadding="0" role="presentation" border="0">
             <tr>
               <td width="600" height="46"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      
-      <!-- TEXT -->
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
-            <tr>
-              <td width="63"></td>
-              <td width="537" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #000000;">
-                <p><strong>A principal vantagem: </strong></p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>   
-
-      <!-- SPACE -->
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
-            <tr>
-              <td width="600" height="21"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      
-      <!-- TEXT -->
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
-            <tr>
-              <td width="63" height="186"></td>
-              <td width="5" height="186" bgcolor="#007FA8"></td>
-              <td width="14" height="186"></td>
-              <td width="444" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
-                Nesses cinco anos, você estará coberto contra eventuais defeitos de fabricação. Em linhas gerais, isso inclui o conserto ou a troca de componentes importantes, como motor,     transmissão, sistema elétrico, suspensão e direção, sem nenhum custo adicional para você.
-                <br><br>
-                Manter a manutenção em dia é essencial para assegurar a      durabilidade do seu veículo. Por isso, nossas concessionárias utilizam somente peças genuínas e contam com uma equipe     treinada e altamente qualificada para realizar os serviços.
-              </td>
-              <td width="74" height="186"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>   
-
-      <!-- SPACE -->
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
-            <tr>
-              <td width="600" height="47"></td>
             </tr>
           </table>
         </td>
@@ -163,34 +276,63 @@
           <table cellspacing="0" cellpadding="0" role="presentation" border="0" bgcolor="#007FA8" style="color: #FFFFFF;">
             <tr>
               <td width="312" height="300">
-                <img width="312" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/e0b47077-91b7-4b43-acfb-a3d54cad6a8b.png" alt="Mecânico verificando o óleo do motor" style="display: block;">
+                <img width="312" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/98fc0223-12ea-4460-896c-a767169dbc5d.png" alt="Homem falando ao celular" style="display: block;">
               </td>
-              <td width="46" height="300"></td>
-              <td width="192" height="300" style="font-size: 14px;">
-                <span style="font-size: 22px;">
-                  <strong>Como manter a garantia ativa?</strong>
-                </span>
-                <br><br>
-                <strong>Revisões programadas e manutenções:</strong> Faça todas as revisões necessárias no prazo estabelecido conforme o manual do proprietário.
-              </td>
-              <td width="50" height="300"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- BOX2 -->
-      <tr>
-        <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0" bgcolor="#007FA8" style="color: #FFFFFF;">
-            <tr>
-              <td width="47" height="220"></td>
-              <td width="211" height="220" style="font-size: 14px;">
-                <strong>Assistência qualificada e peças genuínas:</strong> Serão utilizadas somente peças genuínas Hyundai nos serviços realizados nas concessionárias Hyundai.
-              </td>
-              <td width="54" height="220"></td>
-              <td width="288" height="220">
-                <img width="288" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/96b6b2a1-6924-408e-9b7c-3be98f9c8590.png" alt="" style="display: block;">
+              <td width="288" height="300" valign="top">
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="312" height="30"></td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="30"></td>
+                    <td width="175" style="font-size: 22px;">
+                      <strong>Como acionar a Assistência 24h:</strong>
+                    </td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="312" height="15"></td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="30"></td>
+                    <td width="185" style="font-size: 14px; line-height: 1.1;">
+                      No Brasil, ligue gratuitamente para:
+                      <br><br>
+                      <span style="font-size: 18px; font-weight: bold;">0800 770 3355</span>
+                    </td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="312" height="20"></td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="30" height="1"></td>
+                    <td width="175" height="1" style="border-bottom: 1px solid #FFFFFF;"></td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="312" height="20"></td>
+                  </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" role="presentation" border="0" style="color: #FFFFFF;">
+                  <tr>
+                    <td width="30"></td>
+                    <td width="190" style="font-size: 14px; line-height: 1.1;">
+                      Nos países do Mercosul, ligue a cobrar para:
+                      <br><br>
+                      <span style="font-size: 18px; font-weight: bold;">55 (11) 2663-5390</span>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -202,7 +344,7 @@
         <td>
           <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
             <tr>
-              <td width="600" height="46"></td>
+              <td width="600" height="30"></td>
             </tr>
           </table>
         </td>
@@ -213,13 +355,13 @@
         <td>
           <table cellspacing="0" cellpadding="0" role="presentation" border="0">
             <tr>
-              <td width="61" ></td>
-              <td width="478" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
-                Quer saber mais sobre os detalhes da cobertura ou agendar sua próxima revisão? Entre em contato com a concessionária mais próxima e converse com um de nossos consultores de Pós-Venda.
+              <td width="53" ></td>
+              <td width="494" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.2; color: #000000;">
+                Se precisar de suporte ou mais informações sobre a Assistência 24h, entre em contato com a concessionária Hyundai mais próxima e fale com um de nossos consultores de Pós-Venda. 
                 <br><br>
-                Com a garantia de 5 anos, você tem tranquilidade para aproveitar cada quilômetro com a certeza de que estamos cuidando de tudo para você!
+                <strong>Estamos sempre prontos para auxiliar você!</strong>
               </td>
-              <td width="61" ></td>
+              <td width="53" ></td>
             </tr>
           </table>
         </td>
@@ -234,22 +376,23 @@
             </tr>
           </table>
         </td>
-      </tr>     
+      </tr>   
 
-      <!-- GARANTIA -->
+      <!-- DIVISOR -->
       <tr>
         <td>
-          <table cellspacing="0" cellpadding="0" role="presentation" border="0" >
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0">
             <tr>
-              <td width="600" height="187">
-                <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/752d6e58-0dfe-4f82-89f5-eba7583da75d.png" alt="" style="display: block;">
+              <td width="16"></td>
+              <td width="568" 
+                style="border-top: 1px solid #676767; height: 0; line-height: 0;">
               </td>
+              <td width="16"></td>
             </tr>
           </table>
         </td>
-      </tr>      
+      </tr>
 
-     
       <!-- REDES SOCIAIS -->
       <tr>
         <td>
