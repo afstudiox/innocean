@@ -1,0 +1,881 @@
+%%[
+
+set @fullName = AttributeValue("FirstName") 
+if 
+  indexOf(@fullName, " ") > 0 then set @firstName = Substring(@fullName,1, Subtract(IndexOf(@fullName," "),1))
+elseif 
+  indexOf(@fullName, ";") > 0 then set @firstName = Substring(@fullName, Add(IndexOf(@fullName, ";"), 2), Length(@fullName)) 
+else 
+  set @firstName = AttributeValue("FirstName") endif 
+
+set @external_id = AttributeValue('external_id')
+set @Nome = ProperCase(AttributeValue('Nome'))
+set @Sobrenome = AttributeValue('Sobrenome')
+set @CPF = AttributeValue('CPF')
+set @Celular = AttributeValue('Celular')
+if indexOf(@Nome, " ") > 0 then
+  set @Nome = Substring(@Nome,1, Subtract(IndexOf(@Nome," "),1))
+endif
+
+set @hr = Concat('https://hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=696')
+
+set @tucson = Concat('https://hyundai.com.br/solicitar-um-click.html?account-id=', @external_id, '&offer-id=697')
+
+]%%
+
+<custom name="opencounter" type="tracking"/>
+<!DOCTYPE html>
+<html 
+  lang="en" 
+  xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:v="urn:schemas-microsoft-com:vml" 
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyundai</title>
+</head>
+
+<style>
+  /* reset css */
+  body, table, tr, td, p, img, a, div, hr, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    /* border: none; */
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  img {
+    display: block;
+    border: none;
+  }
+
+  /* Estilos adicionais */
+  * {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+  }
+
+</style>
+
+<body>
+  <table 
+    width="600" 
+    cellspacing="0" 
+    cellpadding="0" 
+    role="presentation"
+    style="margin: auto !important; padding: auto !important;" 
+    align="center" 
+    border="0"
+  >
+    <tbody>
+      <tr bgcolor="#FFFFFF">
+        <td>
+
+          <!-- VIEW EXTERNAL LINK -->
+          <table 
+          cellspacing="0" 
+          cellpadding="0" 
+          role="presentation"
+          style="border-collapse: collapse; border:none;" 
+          border="0"
+          bgcolor="#FFFFFF"
+        >
+          <tr>
+            <td width="600" height="30" 
+              style="
+                border: none;
+                font-family: Arial, Helvetica, sans-serif; 
+                font-size: 10px; 
+                text-align: center;
+                ">
+              Caso não consiga visualizar este e-mail,<a href="%%view_email_url%%" style="text-decoration: none; font-size: 10px;"> clique aqui.</a>
+            </td>
+          </tr>
+          </table>
+          
+          <!-- HEADER -->
+          <table 
+            cellspacing="0" 
+            cellpadding="0" 
+            role="presentation"
+            style="border-collapse: collapse; border:none;" 
+            border="0"
+          >
+            <tr>
+              <td width="600">
+                  <a href="https://www.hyundai.com.br/" style="text-decoration: none;">
+                    <img width="600"  alt="Hyundai" style="display: block;"
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/e5bc2443-624d-480a-b384-5f6dd24e4b24.png">
+                  </a>
+              </td>
+            </tr>
+          </table>
+          
+          <!-- MKV -->
+          <table 
+            cellspacing="0" 
+            cellpadding="0" 
+            role="presentation"
+            style="border-collapse: collapse; border:none;" 
+            border="0"
+          >
+            <tr>
+              <td width="10"></td>
+              <td width="580">
+                  <img width="580" style="display: block;" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/c2925304-2c85-4b7d-a34b-29d473971164.png" alt="Show Rural Coopavel - 10 a 14 de fevereiro. Aproveite condições exclusivas durante o evento!">
+              </td>
+              <td width="10"></td>
+            </tr>
+          </table> 
+
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="55"></td>
+            </tr>
+          </table> 
+
+          <!--TEXT -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="61"></td>
+              <td width="478" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #000000;">
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  Olá, %%=ProperCase(@FirstName)=%%.
+                </p>
+                <br>
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  Está chegando o <strong>Show Rural Coopavel 2025!</strong>
+                </p>
+                <br>
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  Venha participar e aproveite as <strong>condições exclusivas*</strong> que preparamos para você sair de <strong>Hyundai 0 km:**</strong>
+                </p>
+              </td>
+              <td width="61"></td>
+            </tr>
+          </table> 
+          
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="55"></td>
+            </tr>
+          </table>  
+
+          <!-- HR -->
+          <table 
+            cellspacing="0" 
+            cellpadding="0" 
+            role="presentation"
+            style="border-collapse: collapse; border:none;" 
+            border="0"
+          >
+            <tr>
+                <td width="600" bgcolor="#F6F3F2">
+
+                <!-- GIF-->
+                <table 
+                  cellspacing="0" 
+                  cellpadding="0" 
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;" 
+                  border="0"
+                >
+                  <tr>
+                    <td>
+                      <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fac4e8c7-3f9e-478f-a0f5-d5eb1c294062.gif" alt="HR" style="display: block;">
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- PRICE CONDITIONS -->
+                <table 
+                  cellspacing="0" 
+                  cellpadding="0" 
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;" 
+                  border="0"
+                >
+                  <tr>
+                    <td>
+                      <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/6e6eae3d-d261-438f-bc48-3b864ae53fcd.png" alt="Bônus de até R$ 20.000 + taxa zero em até 24x" style="display: block;">
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- CTA -->
+                <table 
+                  cellspacing="0" 
+                  cellpadding="0" 
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;" 
+                  border="0"
+                >
+                  <tr>
+                    <td>
+                      <a href="%%=RedirectTo(@hr)=%%" style="text-decoration: none;">
+                      <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/6980dd43-a47f-451f-a62a-2e537ed327e7.png" alt="Compre já" style="display: block;">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table> 
+
+          
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="53"></td>
+            </tr>
+          </table>  
+
+
+          <!-- TUCSON -->
+          <table 
+          cellspacing="0" 
+          cellpadding="0" 
+          role="presentation"
+          style="border-collapse: collapse; border:none;" 
+          border="0"
+        >
+          <tr>
+              <td width="600" bgcolor="#F6F3F2">
+
+              <!-- GIF-->
+              <table 
+                cellspacing="0" 
+                cellpadding="0" 
+                role="presentation"
+                style="border-collapse: collapse; border:none;" 
+                border="0"
+              >
+                <tr>
+                  <td>
+                    <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/3302f014-49f0-4f06-9224-7021136588e4.gif" alt="TUCSON" style="display: block;">
+                  </td>
+                </tr>
+              </table>
+
+              <!-- PRICE CONDITIONS -->
+              <table 
+                cellspacing="0" 
+                cellpadding="0" 
+                role="presentation"
+                style="border-collapse: collapse; border:none;" 
+                border="0"
+              >
+                <tr>
+                  <td>
+                    <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/31ffcadf-4f7d-4dc7-8f5e-8fd87beb1f2f.png" alt="Bônus de até R$ 8.000 + taxa zero em até 24x" style="display: block;">
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA -->
+              <table 
+                cellspacing="0" 
+                cellpadding="0" 
+                role="presentation"
+                style="border-collapse: collapse; border:none;" 
+                border="0"
+              >
+                <tr>
+                  <td>
+                    <a href="%%=RedirectTo(@tucson)=%%" style="text-decoration: none;">
+                    <img width="600" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/6980dd43-a47f-451f-a62a-2e537ed327e7.png" alt="Compre já" style="display: block;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          </table> 
+          
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="57"></td>
+            </tr>
+          </table>  
+
+          <!--TEXT -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="600" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #000000; text-align: center;">
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  <strong>Não perca o maior evento do <br>agronegócio da América Latina:</strong>
+                </p>
+              </td>
+            </tr>
+          </table> 
+
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="47"></td>
+            </tr>
+          </table>  
+
+          <!-- BOX CTA -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="50"></td>
+              <td width="500" bgcolor="F6F3F2">
+
+                <!--SPACE -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                  bgcolor="#FFFFFF"
+                >
+                  <tr>
+                    <td height="29"></td>
+                  </tr>
+                </table> 
+
+                <!--DATA -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td width="123"></td>
+                    <td width="29">
+                      <img width="29" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/83ad309d-157b-4923-91ac-b23145a935b4.png" alt="" style="display: block
+                    ;">
+                    </td>
+                    <td width="19"></td>
+                    <td width="329" style="font-size: 20px;">10 a 14 de fevereiro</td>
+                  </tr>
+                </table> 
+
+                <!--SPACE -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                  bgcolor="#FFFFFF"
+                >
+                  <tr>
+                    <td height="22"></td>
+                  </tr>
+                </table> 
+
+                <!-- LOCAL -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td width="123"></td>
+                    <td width="29">
+                      <img width="29" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/4bdb9138-6e51-4019-a92d-93cd6292906d.png" alt="" style="display: block
+                    ;">
+                    </td>
+                    <td width="19"></td>
+                    <td width="329" style="font-size: 20px;">BR-277 Km 577 – PR</td>
+                  </tr>
+                </table> 
+
+                <!--SPACE -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                  bgcolor="#FFFFFF"
+                >
+                  <tr>
+                    <td height="35"></td>
+                  </tr>
+                </table> 
+
+                <!-- TEXT -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td width="500" style="font-size: 20px; text-align: center;">
+                      Mais informações no site:
+                    </td>
+                  </tr>
+                </table>
+
+                <!--SPACE -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td height="10"></td>
+                  </tr>
+                </table> 
+
+                <!-- CTA -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td width="125"></td>
+                    <td width="250">
+                      <a href="https://showrural.com.br/index.html" style="text-decoration: none;">
+                        <img width="250" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/05347b73-56a7-472c-b870-26524be20590.png" alt="Saiba mais" style="display: block;">
+                      </a>
+                    </td>
+                    <td width="125"></td>
+                  </tr>
+                </table> 
+
+                <!--SPACE -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td height="15"></td>
+                  </tr>
+                </table>
+
+                <!-- AGENDA -->
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td width="61"></td>
+                    <td width="29">
+                      <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M25odHE4N251Zm8xMXJlamVhaWpqdTN1a2kgNTkzMmI4MWI2ZGEyNWQzMDRiYTM1NTg0NGQ3MzFjNGE0NmViM2QyNDljOThiMzZkZGYxZGFkY2E4Zjc4NmY5YkBn&tmsrc=5932b81b6da25d304ba355844d731c4a46eb3d249c98b36ddf1dadca8f786f9b%40group.calendar.google.com" style="text-decoration: none;">
+                        <img width="29" src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/21b23f80-8317-4e2e-b2cf-5b0066512a1a.png" alt="" style="display: block;">
+                      </a>
+                    </td>
+                    <td width="9"></td>
+                    <td width="401" style="font-size: 20px;">
+                      <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M25odHE4N251Zm8xMXJlamVhaWpqdTN1a2kgNTkzMmI4MWI2ZGEyNWQzMDRiYTM1NTg0NGQ3MzFjNGE0NmViM2QyNDljOThiMzZkZGYxZGFkY2E4Zjc4NmY5YkBn&tmsrc=5932b81b6da25d304ba355844d731c4a46eb3d249c98b36ddf1dadca8f786f9b%40group.calendar.google.com" style="text-decoration: none; color: #000000; font-size: 16px;">
+                        <strong>Clique aqui e salve seu evento na agenda</strong>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!--SPACE -->
+                <table 
+                  cellspacing="0"
+                  cellpadding="0"
+                  role="presentation"
+                  style="border-collapse: collapse; border:none;"
+                  border="0"
+                >
+                  <tr>
+                    <td height="22"></td>
+                  </tr>
+                </table>
+              
+              </td>
+              <td width="50"></td>
+            </tr>
+          </table> 
+          
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="37"></td>
+            </tr>
+          </table>  
+
+          <!--TEXT -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="600" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 1.2; color: #000000; text-align: center;">
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  <strong>Nos vemos por lá!</strong>
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="37"></td>
+            </tr>
+          </table>
+
+          <!--TEXT -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="27"></td>
+              <td width="547" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.2; color: #000000;">
+                <p style="padding: 0; margin: 0; width: 100%;">
+                  *Ofertas válidas apenas para concessionárias no estado do Paraná do dia 10/02/2025 até 22/02/2025. 
+                  **Imagens meramente ilustrativas. Consulte condições no site.
+                </p>
+              </td>
+              <td width="26"></td>
+            </tr>
+          </table>
+
+          <!--SPACE -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td height="11"></td>
+            </tr>
+          </table>
+
+          <!-- DIVISOR -->
+          <table
+           cellspacing="0"
+           cellpadding="0"
+           role="presentation"
+           style="border-collapse: collapse; border:none;"
+           border="0"
+           bgcolor="#FFFFFF"
+         >
+           <tr>
+            <td width="16"></td>
+            <td width="568" height="1" style="border-bottom: 1px solid #676767;"></td>
+            <td width="16"></td>
+           </tr>
+          </table>  
+                           
+          <!-- REDES SOCIAIS -->
+          <table 
+            cellspacing="0" 
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border: none;"
+            border="0"
+            bgcolor="#FFFFFF" 
+            >
+            <tr>
+              <td width="16" height="60">&nbsp;</td>
+
+              <td width="231">
+                <img
+                  src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/af06a0cf-9e87-42b6-9ada-a2a514a8b015.png"
+                  width="231"
+                  alt="Logotipo Ibama. Desacelere. Seu bem maior é a vida."
+                  style="display: inline;"
+                />
+              </td>
+
+              <!-- ALTERAR ESSE ESPAÇAMENTO QUANDO NECESSÁRIO -->
+              <td width="76" height="60"></td>
+
+              <td
+                width="60"
+                height="40"
+                style="
+                  font-family: Arial;
+                  font-size: 10px;
+                  color: #535353;
+                  font-weight: bold;
+                "
+              >
+                Siga-nos:
+              </td>
+
+              <td>
+                <a href="https://www.hyundai.com.br/universo-hyundai.html">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/d74634bc-1375-47d3-973a-63b23c088549.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Blog"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.facebook.com/hyundaibr/">
+                  <img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/59fad6d6-2fd8-4a66-9c8f-27d75a92c2df.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Facebook"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.youtube.com/user/hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/bb7a922c-bbbf-456d-93d8-3e173b0f5919.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Youtube"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.instagram.com/hyundaibr/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/fec28cbd-4579-4348-bc6c-b635f20e496c.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Instagram"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.linkedin.com/company/hyundai-motor-brasil/"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/ba9868d2-ff0d-40ee-936e-bfe36c96dafa.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="LinkedIn"
+                /></a>
+              </td>
+
+              <td width="10" height="60">&nbsp;</td>
+
+              <td>
+                <a href="https://www.tiktok.com/@hyundaibr"
+                  ><img
+                    style="display: block"
+                    src="https://image.mc.mkt-hyundai.com.br/lib/fe2911747364047c7c1d74/m/1/a6146d22-275d-4e7e-90cc-2c583bcb5866.png
+                    "
+                    width="26"
+                    height="26"
+                    alt="Tiktok"
+                /></a>
+              </td>
+
+              <td width="16" height="60">&nbsp;</td>
+            </tr>
+          </table>
+
+          <!-- TEXTO LEGAL -->
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border:none;"
+            border="0"
+            bgcolor="#FFFFFF"
+          >
+            <tr>
+              <td width="16"></td>
+              <td
+                width="568"
+                valign="top"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: justify;
+                "
+              >
+              <br>
+              <strong>
+                HR
+              </strong>
+              <br>
+                HR
+              <br><br>
+
+              <strong>
+              TUCSON 
+              </strong>
+              <br>
+              TUCSON
+              <br><br>
+
+              
+              </td>
+              <td width="16"></td>
+            </tr>
+          </table>
+
+          <!-- BUSINESS INFORMATION & OPT OUT-->
+          <table 
+            cellspacing="0" 
+            cellpadding="0"
+            role="presentation"
+            style="border-collapse: collapse; border: none;"
+            border="0"
+            bgcolor="#FFFFFF" 
+            >
+            <tr>
+              <td width="16">&nbsp;</td>
+              <td
+                width="568"
+                height="60"
+                style="
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #000000;
+                  text-align: center;
+                "
+              >
+                <br>
+                Se você não deseja mais receber e-mails como este,
+                <a href="%%subscription_center_url%%">clique aqui</a>.
+                <br><br>
+                Hyundai Motor Brasil: Avenida Hyundai, 777 - Água Santa -
+                13413-900 - Piracicaba-SP
+                <br><br>
+                Esta é uma mensagem automática. Por favor, não responda este
+                e-mail. Caso deseje,
+                <a href="%%profile_center_url%%">fale conosco.</a>.
+                <br><br>
+                This email was sent to: %%emailaddr%% This email was sent by: %%Member_Busname%% %%Member_Addr%% %%Member_City%%, %%Member_State%% %%Member_PostalCode%% %%Member_Country%%
+                <br><br><br>
+              </td>
+              <td width="16">&nbsp;</td>
+            </tr>
+          </table> 
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
